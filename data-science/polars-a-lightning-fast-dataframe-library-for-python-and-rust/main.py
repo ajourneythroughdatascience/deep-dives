@@ -51,7 +51,7 @@ df = pl.DataFrame({'name' : ['Jack', 'Charles', 'Clarice'],
                    })
 
 # Print object
-df
+print(df)
 
 # Eager Execution
 # --------------------------

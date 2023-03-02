@@ -22,7 +22,7 @@ Meet `Polars`, a DataFrame library built on `Rust` from the ground up, presented
 
 In this Deep Dive, we'll review `Polars` in detail using the `Polars` API for `Python`. We'll discuss its installation, core functionalities, basic syntax, some data transformations, reading and writing from and to different file formats, and more.
 
-We'll be using Python scripts which can be found in the [Deep Dive Repo](https://github.com/pabloagn/blog/tree/master/data-science/polars-a-lightning-fast-dataframe-library-for-python-and-rust).
+We'll be using Python scripts which can be found in the [Deep Dive Repo](https://github.com/pabloagn/deep-dives/tree/master/data-science/polars-a-lightning-fast-dataframe-library-for-python-and-rust).
 
 ---
 
@@ -46,7 +46,7 @@ We'll be using Python scripts which can be found in the [Deep Dive Repo](https:
 	- [Joins](#4-joins)
 	- [Concatenations](#5-concatenations)
 	- [Creating new columns](#6-creating-new-columns)
-- [Multi-threaded execution](#multi-threaded-execution)
+- [Multithreaded execution](#multithreaded-execution)
 - [Schemas and data types](#schemas-and-data-types)
 - [Conclusions](#conclusions)
 - [References](#references)
@@ -94,9 +94,9 @@ With *eager execution*, the code is run as soon as it's encountered; results are
 
 ---
 # Preparing our environment
-`Polars` is offered as a `Python` and a `Rust` package. In this segment, we'll only review the Python flavour; in a future iteration, we might review its Rust counterpart.
+`Polars` is offered as a `Python` and a `Rust` package. In this segment, we'll only review the `Python` flavour; in a future iteration, we might review its Rust counterpart.
 
-We're going to use the `Polars` package. More information about this package can be found in the [`Polars` Official Web Page](https://www.pola.rs/), in the [`Polars` GitHub Repo](https://github.com/pola-rs/polars), or the [`Polars` Official Documentation for Python](https://pola-rs.github.io/polars/py-polars/html/reference/index.html).
+We're going to use the `Polars` package. More information about this package can be found in the [`Polars` Official Web Page](https://www.pola.rs/), in the [`Polars` GitHub Repo](https://github.com/pola-rs/polars), or the [`Polars` Official Documentation for `Python`](https://pola-rs.github.io/polars/py-polars/html/reference/index.html).
 
 If we don't yet have it, we can install it:
 
@@ -142,7 +142,7 @@ We will also use the [Airbnb Prices in European Cities](https://www.kaggle.com/d
 
 We can first create a new folder, `datasets`, inside our project folder. We can then download the entire set as a `.zip` file, extract its contents, and move them to the newly created folder.
 
-The `datasets` folder will contain 20 files weighing 10.2MB.
+The `datasets` folder will contain 20 files weighing 10.2MB in total.
 
 We can also create an outputs directory, where we will store our written files:
 
@@ -903,8 +903,6 @@ We can make use of more advanced filtering operators to narrow our search:
  select(pl.col(['bedrooms', 'room_type'])).
  head(5)
 )
-
-
 ```
 
 ##### **Output**
@@ -964,10 +962,10 @@ It's important to note that we're not using Python's aggregation methods; the me
 `Polars` supports several `join` strategies accessible by specifying the `strategy` argument. 
 
 The main strategies are:
--   `inner`: Produces a `DataFrame` that contains only the rows where the join key exists in both `DataFrames`.
--   `left`: Produces a `DataFrame` that contains all the rows from the left `DataFrame` and only the rows from the right `DataFrame` where the join key exists in the left `DataFrame`.
--   `outer`: Produces a `DataFrame` that contains all the rows from both `DataFrames`.
--   `cross`: Performs the cartesian product of the two `DataFrames`.
+-   `inner`: Produces a DataFrame that contains only the rows where the join key exists in both DataFrames.
+-   `left`: Produces a DataFrame that contains all the rows from the left DataFrame and only the rows from the right DataFrame where the join key exists in the left DataFrame.
+-   `outer`: Produces a DataFrame that contains all the rows from both DataFrames.
+-   `cross`: Performs the cartesian product of the two DataFrames.
 
 We can perform a `join` operation:
 
@@ -1150,8 +1148,8 @@ It's important to note that `alias()` is a method belonging to the `pl.col()` me
 
 ---
 
-# Multi-threaded execution
-`Polars` uses an approach called *split-apply-combine* to process data. Multi-threaded execution happens on both the *split* and *apply* phases.
+# Multithreaded execution
+`Polars` uses an approach called *split-apply-combine* to process data. Multithreaded execution happens on both the *split* and *apply* phases.
 
 We can describe this process applied to a `groupby()` operation as follows:
 - Data is loaded and contained in a `Polars` DataFrame object.
@@ -1173,7 +1171,7 @@ For the hashing operations performed during the *split* phase, `Polars` uses a m
 
 ###### *[Figure 5: `Polars` hashing operations](https://pola-rs.github.io/polars-book/user-guide/dsl/groupby.html)*
 
-A multi-threaded approach makes execution faster since multiple tasks are being processed simultaneously. That is not to say that we can use whichever method or function we wish and still be parallelized; if we were to use a `lambda` or a custom `Python` function to apply during a parallelized phase, `Polars` speed would be capped running `Python` code preventing any multiple threads from executing the function.
+A multithreaded approach makes execution faster since multiple tasks are being processed simultaneously. That is not to say that we can use whichever method or function we wish and still be parallelized; if we were to use a `lambda` or a custom `Python` function to apply during a parallelized phase, `Polars` speed would be capped running `Python` code preventing any multiple threads from executing the function.
 
 This is important to remember; if we're looking to maximize efficiency, the idea is to use native `Polars` functions and methods whenever possible.
 
@@ -1314,14 +1312,14 @@ For those already familiar with `Pandas`, this remarkable [cheatsheet](https://w
 
 One disadvantage of `Polars` is the lack of community discussion; `Pandas` is everywhere, all the time, and there is a vast amount of resources out there. Hopefully, more people will adopt `Polars` in the future.
 
-Finally, it's important to keep in mind that, as we reviewed, `Polars` accepts `Pandas`-like syntax, but that does not mean we should use it if we want to maintain the high performance `Polars` was designed to output; according to the Polars User Guide, *"if your `Polars` code looks like it could be `Pandas` code, it might run, but it likely runs slower than it should."*
+Finally, it's important to keep in mind that, as we reviewed, `Polars` accepts `Pandas`-like syntax, but that does not mean we should use it if we want to maintain the high performance `Polars` was designed to output; according to the `Polars` User Guide, *"if your `Polars` code looks like it could be `Pandas` code, it might run, but it likely runs slower than it should."*
 
 ---
 
 # References
 - [`Polars` Official Page, Home](https://www.pola.rs/)
 - [`Polars` User Guide](https://pola-rs.github.io/polars-book/user-guide/)
-- [Cheatsheet for Pandas to `Polars`](https://www.rhosignal.com/posts/polars-pandas-cheatsheet/)
+- [Cheatsheet for `Pandas` to `Polars`](https://www.rhosignal.com/posts/polars-pandas-cheatsheet/)
 - [`Polars` Official Page, GroupBy](https://pola-rs.github.io/polars-book/user-guide/dsl/groupby.html)
 - [`Polars` Official Page, Data Types](https://pola-rs.github.io/polars/py-polars/html/reference/datatypes.html)
 

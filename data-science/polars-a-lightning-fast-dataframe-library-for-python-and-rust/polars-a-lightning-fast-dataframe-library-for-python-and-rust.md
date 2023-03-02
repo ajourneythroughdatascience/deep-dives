@@ -27,14 +27,36 @@ We'll be using Python scripts which can be found in the [Deep Dive Repo](https:
 ---
 
 # Table of Contents
-- Preface
+- [Preface](#preface)
+- [Preparing our environment](#preparing-our-environment)
+- [Polars data structures](#polars-data-structures)
+- [Eager execution](#eager-execution)
+- [Lazy execution](#lazy-execution)
+- [Reading and writing multiple file formats](#reading-and-writing-multiple-file-formats)
+	- [Writing](#1-writing)
+	- [Reading](#2-reading)
+- [Basic operations](#basic-operations)
+	- [Exploratory methods](#1-exploratory-methods)
+	- [Indexing, selecting and filtering](#2-indexing-selecting-and-filtering)
+		- [Select](#21-select)
+		- [Filter](#22-filter)
+		- [Filtering with multiple conditions](#23-filtering-with-multiple-conditions)
+		- [Filtering with advanced operators](#24-filtering-with-advanced-operators)
+	- [Aggregations](#3-aggregations)
+	- [Joins](#4-joins)
+	- [Concatenations](#5-concatenations)
+	- [Creating new columns](#6-creating-new-columns)
+- [Multi-threaded execution](#multi-threaded-execution)
+- [Schemas and data types](#schemas-and-data-types)
+- [Conclusions](#conclusions)
+- [References](#references)
 
 ---
 
 # Preface
 `Polars` is a DataFrame library/in-memory query engine written in [Rust](https://pabloagn.com/technologies/rust/). It's built upon the [safe Arrow2 implementation](https://github.com/jorgecarleitao/arrow2) of the [Apache Arrow specification](https://arrow.apache.org/docs/format/Columnar.html), enabling efficient resource use and processing performance. By doing so it also integrates seamlessly with other tools in the Arrow ecosystem.
 
-Unlike tools such as `dask`, which tries to parallelize existing single-threaded libraries like `Numpy` and `Pandas`, `Polars` is designed for parallelization, resulting in extremely fast processing speeds by default.
+Unlike tools such as `Dask`, which try to parallelize existing single-threaded libraries like `Numpy` and `Pandas`, `Polars` is designed for parallelization, resulting in extremely fast processing speeds by default.
 
 A `groupby` task performed on a 5GB dataset, resulted in the following execution times:
 
@@ -62,17 +84,13 @@ A `join` task performed on a 5GB dataset, resulted in the following execution ti
 
 ###### *[Table 2. Join execution times on 5 GB data set, H2O AI](https://h2oai.github.io/db-benchmark/)*
 
-
-We can see that...
-
-
 The full benchmark can be consulted [here](https://h2oai.github.io/db-benchmark/).
 
-`Polars` for Python exposes a complete Python API, including the full set of features to manipulate DataFrames using an expression language similar to `Pandas`. It also has 2 different APIs:
+`Polars` for `Python` exposes a complete `Python` API, including the full set of features to manipulate DataFrames using an expression language similar to `Pandas`. It also has 2 different APIs:
 - A lazy API
 - An eager API
 
-With eager execution, the code is run as soon as it's encountered; results are returned immediately. With lazy execution, the code is run until the result is required. 
+With *eager execution*, the code is run as soon as it's encountered; results are returned immediately. With *lazy execution*, the code is run until the result is required.
 
 ---
 # Preparing our environment
@@ -1295,6 +1313,8 @@ In this segment we've gone from zero to `Polars`; it's a lot to digest, but the 
 For those already familiar with `Pandas`, this great [cheatsheet](https://www.rhosignal.com/posts/polars-pandas-cheatsheet/) covers `Polars` translations of the most relevant `Pandas` operations.
 
 One disadvantage about `Polars`, is the lack of community discussing the library; `Pandas` is everywhere, all the time, and there is a vast amount of resources out there. Hopefully more people will adopt `Polars` in the future.
+
+Finally, it's important to keep in mind that, as we reviewed, `Polars` accepts `Pandas`-like syntax, but that does not mean we should use it if we want to maintain the high performance `Polars` was designed to output; according to the Polars User Guide, *"if your `Polars` code looks like it could be `Pandas` code, it might run, but it likely runs slower than it should."*
 
 ---
 

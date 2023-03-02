@@ -10,26 +10,29 @@
 
 [![type](https://img.shields.io/static/v1?label=Type&message=deep-dive&color=e60048&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAi0lEQVRIS+2WMQ7AIAhF/UNXrtP7rz2OYxeqTWxMTBUSxQVXfnzyQQKC8YExL7zAGCNbgIkIsIKVhBw4vbR7unR6Gp0LvwxXd2v+EvkdDpxWXpWlRTyi9/pABRyBJHEHSlxSadxSlV0SsVsqcUml2W/pynWxnsXNisHMRxrCl8qvH3ECnQDuOmy+0zwB4WNxmUKgwwAAAABJRU5ErkJggg==&labelColor=1a1a1a&style=flat)](https://pabloagn.com/deep-dives/) [![category](https://img.shields.io/static/v1?label=Category&message=data-science&color=e60048&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAB9UlEQVRIS6VWMU7DQBDkDAQEdrAoCISCAomCL1DxC95Azy9oeQS/oOIHVFAgREFoCHGCRSzZzEU+63LZ9W6CO/vudmZ2d9Zn1pTPaDSqut2usduHw+FpFEUv7t1fk8LNAkiPDWj3+ADuTPjNvXMxWwGzLCuqqtqwh5MkiY0xEwfOAfrEKFAWUBO4DZQDXgCEqjuouvbZUanUrocpngMMVUkKtKC+WhFQUudAUd8r1PkepJ/w7Tysn4uzkNJlascF9WOASAki6w0xrn19b3Gpps5y3kRfJADPZgr9gJSP0EgDHDiQ/Mp50PfxAmDtuQhsZmb/z0OVhwSkmGrSGp5bGRDp3EFaJ5JaiahdZ2vYNj/JkWVMgW7sgNw2yOW+99gacp7TeFE72OcUrgo4Ho93+/3+D5T9QmGHm0BNSnHgMI7jj9Ai2tElZGCK9S3S+GA4BcNNydBaIuEstu/iLJWCa+pLDm+Nz+xQAsBenucnRVG8asFq0s/Yf9YoVAI21wyn3N4I7M1A8ijWHwB42XrFqIO9YfMRlVqqyXC5ukED3nIEVJcoBXv1lmWa5gIpeeQioyTWVj1uXf0DpgKUZbmfpunXKnVnU9rWDKiTHRSDNkDu36iqIQK/Q+mxU8sBYniL/1EVoJ9Wqwo/5x6Cf9YKv6Em1XbNH5bGfSwvuRe1AAAAAElFTkSuQmCC&labelColor=1a1a1a&style=flat)](https://pabloagn.com/categories/data-science/) [![technologies](https://img.shields.io/static/v1?label=Technologies&message=Python&color=e60048&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA1klEQVR4nM2RMW7CUBBEnUikIQUIlBJxrrQgJG7ABRBnoUkaWhpoUgWJlgNYbvz/G1dUi1ayoy87rpOtVrszs6OdLPtXlef5UNJXjHHcCwohjMzsKZ3FGN+Bq/e+c0xHGfiWtEznkg6SNnW/dIxjs0YJ2AMnM3tJSFPgHkKY17gBcAQ+zOw5A3aSbsCkdW0NnNOZY2rstpcInJ3cS/SzwGdqtSzLmdusquqtIXWsehVF8QpcJK1qmxt/TMv6wjE/z0leP27i8Ag8inT/axxtAQ+9o/zn9QD3JOiyTjnQEQAAAABJRU5ErkJggg==&labelColor=1a1a1a&style=flat)](https://pabloagn.com/technologies/) [![website article](https://img.shields.io/static/v1?label=Website&message=Post%20Link&color=e60048&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB+ElEQVR4nO2VOYgUURCGR/BAI4MN1EwjI89EMDYQvNBNNNlcE0VBUdlUUSMjj2BF2UDRePDAwGzNF2GNPIYd8Hjv/6YnEHSf/FIDPTJiu4nJFBTd1Kv6/nrVBd1q/S8DJiU9AmaBm5LOSjoATPwDY0LSQUnnzDArmJOjkqclvQceSHohaR6oJC1JeiPprqT9pZSVg5pSyirH4sw5S1EzbwZwP5jTIwWBdj1meEppZ6/XOyXpCdCX9Am4Fv45Yo+Bk1VV7ag3FNz2kKC7yznvHiX4u3U6nXU55xPAW7vfHfvLmNtmW8NaFux67k0Ea03esTfJJQTj23bHgiNtPNK6jZem3Wpg46Wp23hp2q0GNl6axksjaRGYkXRF0mnHq6ra2HSk/X5/k6RDks6YEazFPwnuBS5KuirptqTnkj4CJZ4zwNFSytqBoP/2wDHgXi33A/BM0i2zzDR7SBC4LGlPr9fb5huVUlYMus45b5E0FYJfgQS8C8/Al7jJVEpp86DODLPMNDs0up7xXBQZVKLLb8CCpIfA+ZzzvpTS+lLKGuAI8DT8cClltc+c49yoWQjGL140ao25oW8QXW1IKe3KOR8Hbkh66ZtI+i7plaG+iR244JjP3HDkXnetGWbVp9XYopHtHgvwWtIPu9+BSx7bssBNDdhqX07xT/Jbz1SBBDGHAAAAAElFTkSuQmCC&labelColor=1a1a1a&style=flat)](https://pabloagn.com/deep-dives/polars-a-lightning-fast-dataframe-library-for-python-and-rust/)
 
-Writing code can be as simple as importing the required libraries, declaring our variables, functions, and classes as required, including some docstrings here and there, some additional comments, executing, and we're done. While we're at it, let's skip the function & class part and drop everything as is. Even better, let's also save some lines by stripping our file from all comments.
+Of all the libraries belonging to any Data Scientist's toolbox, `Pandas` may be the most important one; it's built on top of the `NumPy` package, and provides data structures and methods tailored for data manipulation and analysis with a syntax similar to SQL queries. 
 
-In this Deep Dive, we'll
+The thing about `Pandas` is that it does not support parallelization natively thus limiting its computation capabilities; some `Pandas` tasks can be parallelized by using [`Dask`](https://www.dask.org/) or other libraries, but this requires external handling and is not always the best solution.
 
-We'll be using Python scripts which can be found in the [Deep Dive Repo](https://github.com/pabloagn/blog/tree/master/computer-science/programming-best-practices-writing-better-code).
+Additionally, `Pandas` does not support *lazy execution*; this means that the code is run directly, and its results are returned immediately, which can result in running unnecessary code.
+
+All these aspects make `Pandas` still attractive for relatively small computation tasks, but somewhat unattractive for more extense data set manipulation.
+
+Meet `Polars`, a DataFrame library built on Rust from the ground up, presented in two flavors: A Python and a Rust API.
+
+In this Deep Dive, we'll review `Polars` in detail using the `Polars` API for `Python`. We'll discuss its installation, core functionalities, basic syntax, some data transformations, reading and writing from and to different file formats, and more.
+
+We'll be using Python scripts which can be found in the [Deep Dive Repo](https://github.com/pabloagn/blog/tree/master/data-science/polars-a-lightning-fast-dataframe-library-for-python-and-rust).
 
 ---
 
 # Table of Contents
-- [Legibility](#legibility)
-	- [Authoring](#1-authoring)
-	- [Comments](#2-comments)
-- [Conclusions](#conclusions)
-- [References](#references)
-- [Copyright](#copyright)
+- Preface
 
 ---
 
 # Preface
-**Polars** is a DataFrame library/in-memory query engine written in [Rust](https://pabloagn.com/technologies/rust/). It's built upon the [safe Arrow2 implementation](https://github.com/jorgecarleitao/arrow2) of the [Apache Arrow specification](https://arrow.apache.org/docs/format/Columnar.html), enabling efficient resource use and processing performance. By doing so it also integrates seamlessly with other tools in the Arrow ecosystem.
+`Polars` is a DataFrame library/in-memory query engine written in [Rust](https://pabloagn.com/technologies/rust/). It's built upon the [safe Arrow2 implementation](https://github.com/jorgecarleitao/arrow2) of the [Apache Arrow specification](https://arrow.apache.org/docs/format/Columnar.html), enabling efficient resource use and processing performance. By doing so it also integrates seamlessly with other tools in the Arrow ecosystem.
 
 Unlike tools such as `dask`, which tries to parallelize existing single-threaded libraries like `Numpy` and `Pandas`, `Polars` is designed for parallelization, resulting in extremely fast processing speeds by default.
 
@@ -65,7 +68,7 @@ We can see that...
 
 The full benchmark can be consulted [here](https://h2oai.github.io/db-benchmark/).
 
-`Polars` for Python exposes a complete Python API, including the full set of features to manipulate DataFrames using an expression language similar to `pandas`. It also has 2 different APIs:
+`Polars` for Python exposes a complete Python API, including the full set of features to manipulate DataFrames using an expression language similar to `Pandas`. It also has 2 different APIs:
 - A lazy API
 - An eager API
 
@@ -73,9 +76,9 @@ With eager execution, the code is run as soon as it's encountered; results are r
 
 ---
 # Preparing our environment
-Polars is offered as a Python and a Rust package. In this segment, we'll only review the Python flavor; in a future iteration we might review its Rust counterpart.
+`Polars` is offered as a Python and a Rust package. In this segment, we'll only review the Python flavor; in a future iteration we might review its Rust counterpart.
 
-We're going to use the `polars` package. More information about this package can be found in the [Polars Official Web Page](https://www.pola.rs/), in the [Polars GitHub Repo](https://github.com/pola-rs/polars), or in the [Polars Official Documentation for Python](https://pola-rs.github.io/polars/py-polars/html/reference/index.html).
+We're going to use the `Polars` package. More information about this package can be found in the [`Polars` Official Web Page](https://www.pola.rs/), in the [`Polars` GitHub Repo](https://github.com/pola-rs/polars), or in the [`Polars` Official Documentation for Python](https://pola-rs.github.io/polars/py-polars/html/reference/index.html).
 
 If we don't yet have it, we can install it:
 
@@ -93,12 +96,13 @@ pip install geopy
 pip install folium
 ```
 
-The convention is to import `polars` using the `pl` alias, but we can select any alias we find more convenient. For our case, we'll be using the preferred alias. We'll also import some other modules which will come in handy:
+The convention is to import `Polars` using the `pl` alias, but we can select any alias we find more convenient. For our case, we'll be using the preferred alias. We'll also import some other modules which will come in handy:
 
 ##### **Code**
 ```Python
 import polars as pl
 import pandas as pd
+import numpy as np
 import pyarrow
 import os
 import glob
@@ -109,7 +113,7 @@ import folium
 from folium.plugins import FastMarkerCluster
 ```
 
-As of the writing of this article, the `polars` version downloaded is the 0.16.9. We can confirm this by using the `__version__` method:
+As of the writing of this article, the `Polars` version downloaded is the 0.16.9. We can confirm this by using the `__version__` method:
 
 ##### Code
 ```Python
@@ -142,7 +146,7 @@ With everything ready, we can now proceed to load our data sets and perform some
 ---
 
 # Polars data structures
-Similar to `pandas`, `polars` has two main data structures:
+Similar to `Pandas`, `Polars` has two main data structures:
 
 - `Series`: One-dimensional.
 - `DataFrame` (With a `LazyFrame` variation for *lazy execution*): Can be one or two-dimensional.
@@ -236,9 +240,9 @@ polars.internals.dataframe.frame.DataFrame
 
 ---
 # Lazy execution
-As we mentioned earlier, *lazy* operations don't execute until we call `collect`. This allows `polars` to optimize/reorder the query which may lead to faster queries or less type errors.
+As we mentioned earlier, *lazy* operations don't execute until we call `collect`. This allows `Polars` to optimize/reorder the query which may lead to faster queries or less type errors.
 
-There are two main ways for *lazy-reading* a `.csv` file in `polars`:
+There are two main ways for *lazy-reading* a `.csv` file in `Polars`:
 
 - Using `pl.scan_csv()`
 - Using `pl.read_csv().lazy()`
@@ -290,7 +294,11 @@ df_s.show_graph()
 
 ##### **Output**
 
-SCREENSHOT_2
+<p align="center">
+  <img src="https://pabloagn.com/wp-content/uploads/2023/03/D001A016_screenshot_02.svg">
+</p>
+
+###### *Figure 1: Execution Plan Graph for lazy DataFrame Reading*
 
 We can include additional transformation steps to our object:
 
@@ -311,7 +319,11 @@ df_s_filtered.show_graph()
 
 ##### **Output**
 
-SCREENSHOT_3
+<p align="center">
+  <img src="https://pabloagn.com/wp-content/uploads/2023/03/D001A016_screenshot_03.svg">
+</p>
+
+###### *Figure 2: Execution Plan Graph for Several Lazy Transformations*
 
 We can see that the additional steps were added, and are ready to be executed upon collecting our object.
 
@@ -361,7 +373,7 @@ shape: (124, 1)
 # Reading and writing multiple file formats
 
 ## 1. Writing
-As with `pandas`, `polars` can write to multiple file formats, the most common ones being:
+As with `Pandas`, `Polars` can write to multiple file formats, the most common ones being:
 
 - `.avro`
 - `.csv`
@@ -396,7 +408,7 @@ df_weekdays.shape
 round(df_weekdays.estimated_size(unit='mb'), 4)
 ```
 
-We should end up with a `polars` DataFrame object of shape `(25500, 20)`:
+We should end up with a `Polars` DataFrame object of shape `(25500, 20)`:
 
 ##### **Output**
 ```
@@ -436,7 +448,7 @@ df_weekdays.write_json(os.path.join(wDir, 'weekdays.json'))
 ```
 
 ## 2. Reading
-Conversely, polars can read all the file formats we wrote earlier. We'll skip the `.csv` file format since we already reviewed it. For the other cases, we can use the `pl.read_formatname()` syntax:
+Conversely, `Polars` can read all the file formats we wrote earlier. We'll skip the `.csv` file format since we already reviewed it. For the other cases, we can use the `pl.read_formatname()` syntax:
 
 ##### **Code**
 ```Python
@@ -598,8 +610,8 @@ Series: 'realSum' [f64]
 ```
 
 We can notice some interesting details:
-- The `df.columns` method returns a `list`, as opposed to `pandas` which returns a `pandas.core.indexes.base.Index` object.
-- The `df.head()` method returns a `polars.internals.series.series.Series` object, similar to `pandas` which returns a `pandas.core.series.Series`. 
+- The `df.columns` method returns a `list`, as opposed to `Pandas` which returns a `pandas.core.indexes.base.Index` object.
+- The `df.head()` method returns a `polars.internals.series.series.Series` object, similar to `Pandas` which returns a `pandas.core.series.Series`. 
 - The `df.head()` method also returns the column data type, which in the case of `realSum` is `float64`.
 
 We can also perform a statistical description:
@@ -656,7 +668,7 @@ df.sample(5)
 	- the `select` method is used to select columns
 	- the `filter` method is used to select rows
 
-The square brackets `[]` method works similar to `pandas`, but has limited usage in `polars`; it only works in eager mode, and operations on multiple columns are not parallelized.
+The square brackets `[]` method works similar to `Pandas`, but has limited usage in `Polars`; it only works in eager mode, and operations on multiple columns are not parallelized.
 
 This method is recommended on the following cases:
 -   To extract a scalar value from a `DataFrame`
@@ -785,7 +797,7 @@ We can also filter by `bedrooms` using a boolean comparison, select the `metro_d
 └────────────┘
 ```
 
-Similar to `pandas`, the execution order of a statement is top to bottom, meaning it will filter the `bedrooms` column first, and get the head of the resulting object last.
+Similar to `Pandas`, the execution order of a statement is top to bottom, meaning it will filter the `bedrooms` column first, and get the head of the resulting object last.
 
 ### 2.3 Filtering with multiple conditions
 
@@ -822,7 +834,7 @@ berlin_places = (df.filter((pl.col("person_capacity") == 2) &
 └──────────┴──────────┴────────────────────┘
 ```
 
-As we move further, we can see a pattern in `polars` syntax; it's very similar to SQL syntax, while at the same time being closely related to `pandas`. Polars almost writes as a declarative language, each transformation step being very clear. Clarity increases if we separate each statement in a newline continuation.
+As we move further, we can see a pattern in `Polars` syntax; it's very similar to SQL syntax, while at the same time being closely related to `Pandas`. `Polars` almost writes as a declarative language, each transformation step being very clear. Clarity increases if we separate each statement in a newline continuation.
 
 Since we don't have the actual addresses for the places we would like to check, we will use the geolocation libraries we installed earlier to visualize these coordinates in a `folium` map:
 
@@ -851,7 +863,11 @@ berlin_map.save(os.path.join(wDir, 'berlin_places.html'))
 
 ##### **Output**
 
-SCREENSHOT_01
+<p align="center">
+  <img src="https://pabloagn.com/wp-content/uploads/2023/03/D001A016_screenshot_01.png">
+</p>
+
+###### *Figure 3: Berlin Place Coordinates in an HTML Folio Map*
 
 Looks like we we should be looking for places near the Neukölln and Friedrichshain-Kreuzberg boroughs.
 
@@ -981,28 +997,313 @@ shape: (3, 4)
 +---------+-----------+---------------------+-------------------------------+
 ```
 
+## 5. Concatenations
+While a `join` operation is most often performed on the horizontal axis, a `concat` operation is performed on the vertical axis.
+
+This can help us stack DataFrame objects, given they're of the same dimensions:
+
+##### **Code**
+```Python
+# Read two different DataFrames
+df_berlin = pl.read_csv(os.path.join(rDir, 'berlin_weekends.csv'))
+df_vienna = pl.read_csv(os.path.join(rDir, 'vienna_weekends.csv'))
+
+# Add city column to each one
+df_berlin = (df_berlin.
+             with_columns(pl.lit('Berlin').
+             alias('city'))
+             )
+
+df_vienna = (df_vienna.
+             with_columns(pl.lit('Vienna').
+             alias('city'))
+             )
+
+# Concatenate them on vertical axis
+df_berlin_vienna = pl.concat([df_berlin, df_vienna])
+```
+
+##### **Output**
+```
+SchemaError: cannot vstack: because column datatypes (dtypes) in the two DataFrames do not match for left.name='person_capacity' with left.dtype=i64 != right.dtype=f64 with right.name='person_capacity'
+```
+
+Seems like we got a `SchemaError`. The reason is that our data sets, despite coming from the same source and having the same shape, have different data types in one of their columns `person_capacity`. A `SchemaError` can represent the same as a `TypeError`; the only difference, is that `Polars` uses schemas to define DataFrame objects.
+
+In order to solve this conflict, we have two options:
+- Cast `person_capacity` from `df_berlin` to `float64` data type.
+- Cast `person_capacity` from `df_vienna` to `int64` data type.
+
+Since there are no half persons, we can proceed with the second option:
+
+##### **Code**
+```Python
+# Due to SchemaError, we need to cast data type from column person_capacity
+df_vienna = df_vienna.with_columns(pl.col("person_capacity").cast(pl.Int64))
+
+# Try concatenation again
+df_berlin_vienna = pl.concat([df_berlin, df_vienna])
+```
+
+We can verify that our operation was performed successfully by getting the unique values for `city` of our resulting DataFrame:
+
+##### **Code**
+```Python
+(df_berlin_vienna.groupby(['city'], maintain_order=True).
+ agg(pl.col('lat').n_unique().
+     alias('unique_latitudes')
+     )
+ )
+```
+
+##### Output
+```
+shape: (2, 2)
+┌────────┬──────────────────┐
+│ city   ┆ unique_latitudes │
+│ ---    ┆ ---              │
+│ str    ┆ u32              │
+╞════════╪══════════════════╡
+│ Berlin ┆ 1076             │
+│ Vienna ┆ 1462             │
+└────────┴──────────────────┘
+```
+
+## 6. Creating new columns
+We already went over an example of how to create new columns in `Polars` on the Writing section. The general syntax for this operation includes the following methods (the *`alias()` method is only required when we're trying to assign a new column which is product of an aggregation operation*):
+- `with_columns()`
+- `alias()`
+
+We can define a new column based on another object:
+
+##### **Code**
+```Python
+# Define a numpy array of ones
+new_col = np.random.random([len(df)])
+
+# Assign new column to dataframe
+df = df.with_columns(pl.Series(name="new_col", values=new_col))
+```
+
+##### **Output**
+```
+┌──────────┬──────────┬──────────┐
+│ lng      ┆ lat      ┆ new_col  │
+│ ---      ┆ ---      ┆ ---      │
+│ f64      ┆ f64      ┆ f64      │
+╞══════════╪══════════╪══════════╡
+│ 13.42344 ┆ 52.4915  ┆ 0.414997 │
+│ 13.503   ┆ 52.509   ┆ 0.397309 │
+│ 13.468   ┆ 52.519   ┆ 0.277131 │
+│ 13.47096 ┆ 52.51527 ┆ 0.429678 │
+│ ...      ┆ ...      ┆ ...      │
+│ 13.53187 ┆ 52.40874 ┆ 0.06139  │
+│ 13.53301 ┆ 52.40712 ┆ 0.810651 │
+│ 13.70702 ┆ 52.42405 ┆ 0.92665  │
+│ 13.691   ┆ 52.37    ┆ 0.853674 │
+└──────────┴──────────┴──────────┘
+```
+
+We can also define a new column name after some operation, such as an aggregation:
+
+##### **Code**
+```Python
+(df.groupby(['room_shared'], maintain_order=True).
+ agg(pl.col('cleanliness_rating').mean().
+     alias('average_cleanliness')
+     )
+ )
+```
+
+##### **Output**
+```
+shape: (2, 2)
+┌─────────────┬─────────────────────┐
+│ room_shared ┆ average_cleanliness │
+│ ---         ┆ ---                 │
+│ bool        ┆ f64                 │
+╞═════════════╪═════════════════════╡
+│ false       ┆ 9.462995            │
+│ true        ┆ 8.973684            │
+└─────────────┴─────────────────────┘
+```
+
+It's important to note that `alias()` is a method belonging to the `pl.col()` method, and not to the DataFrame object. This makes sense, since `alias()` aims at renaming or giving name to a given column.
 
 ---
 
+# Multi-threaded execution
+`Polars` uses an approach called *split-apply-combine* to process data. Multi-threaded execution happens specifically on both the *split* and *apply* phases.
 
+We can describe this process applied to a `groupby()` operation as follows:
+- Data is loaded and contained in a `Polars` DataFrame object.
+- Upon calling a `groupby()` operation, this DataFrame is split into $n$ partitions.
+- The aggregating operation is applied to each partition by separate and in parallel.
+- All partitions are then combined to build the final return object.
 
+<p align="center">
+  <img src="https://pabloagn.com/wp-content/uploads/2023/03/D001A016_screenshot_04.svg">
+</p>
 
+###### *[Figure 4: `Polars` multithreaded approach](https://pola-rs.github.io/polars-book/user-guide/dsl/groupby.html)*
+
+For the hashing operations performed during the *split* phase, `Polars` uses a multithreaded lock-free approach that is illustrated on the following schema:
+
+<p align="center">
+  <img src="https://pabloagn.com/wp-content/uploads/2023/03/D001A016_screenshot_05.svg">
+</p>
+
+###### *[Figure 5: `Polars` hashing operations](https://pola-rs.github.io/polars-book/user-guide/dsl/groupby.html)*
+
+A multi-threaded approach makes execution faster, since multiple tasks are being processed at the same time. That is not to say that we can use whichever method or function we wish, and will still be parallelized; if we were to use a `lambda` or a custom `Python` function to apply during a parallelized phase, `Polars` speed would be capped running `Python` code preventing any multiple threads from executing the function.
+
+This is important to remember; the idea if we're looking to maximize efficiency, is to use native `Polars` functions and methods whenever possible.
+
+---
+
+# Schemas and data types
+As we mentioned earlier, `Polars` works with schemas; originally, the term *schema* was defined in the relational database context, where it represents how the data may relate to other tables or other data models. In APIs such as `PySpark` or `Polars`, a schema is the data set type definition.
+
+When working with Python, we often do not have to pay attention to the data types, since Python is a dynamically typed language, meaning data type definitions are not required. This is applicable of course, when we have the data types we need; otherwise, we cast the data to their required data types.
+
+Dynamic typing does not mean data types are ignored or not required, but they are inferred upon execution. This is a resource intensive task, specially with large data sets. Also, not having a predefined schema can cause data type errors such as the one we encountered earlier; when we loaded our data sets, `Polars` inferred the data types based on the data set values.
+
+`Polars` supports a wide variety of data types:
+
+| Class       | Type                       | Description                                                                |
+| ----------- | -------------------------- | -------------------------------------------------------------------------- |
+| Numeric     | `Float32`                    | 32-bit floating point type.                                                |
+| Numeric     | `Float64`                    | 64-bit floating point type.                                                |
+| Numeric     | `Int16`                      | 16-bit signed integer type.                                                |
+| Numeric     | `Int32`                      | 32-bit signed integer type.                                                |
+| Numeric     | `Int64`                      | 64-bit signed integer type.                                                |
+| Numeric     | `Int8`                       | 8-bit signed integer type.                                                 |
+| Numeric     | `UInt16`                     | 16-bit unsigned integer type.                                              |
+| Numeric     | `UInt32`                     | 32-bit unsigned integer type.                                              |
+| Numeric     | `UInt64`                     | 64-bit unsigned integer type.                                              |
+| Numeric     | `UInt8`                      | 8-bit unsigned integer type.                                               |
+| Date / Time | `Date`                       | Calendar date type.                                                        |
+| Date / Time | `Datetime`                   | Calendar date and time type.                                               |
+| Date / Time | `Duration`                   | Time duration/delta type.                                                  |
+| Date / Time | `Time`                       | Time of day type.                                                          |
+| Nested      | `List(*args, **kwargs)`   | List.                                                                      |
+| Nested      | `Struct(*args, **kwargs)` | Struct.                                                                    |
+| Other       | `Boolean`                    | Boolean type.                                                              |
+| Other       | `Binary`                     | Binary type.                                                               |
+| Other       | `Categorical`                | A categorical encoding of a set of strings.                                |
+| Other       | `Null`                       | Type representing Null / None values.                                      |
+| Other       | `Object`                     | Type for wrapping arbitrary Python objects.                                |
+| Other       | `Utf8`                       | UTF-8 encoded string type.                                                 |
+| Other       | `Unknown`                    | Type representing Datatype values that could not be determined statically. |
+
+###### *[Table 3: `Polars` Data Types](https://pola-rs.github.io/polars/py-polars/html/reference/datatypes.html)*
+
+To avoid these errors and make processing more efficient, we can use a predefined schema:
+
+##### **Code**
+```Python
+# Define schema
+schema = {'' : pl.Int64,
+          'realSum' : pl.Float64,
+          'room_type' : pl.Utf8,
+          'room_shared' : pl.Boolean,
+          'room_private' : pl.Boolean,
+          'person_capacity' : pl.Int64,
+          'host_is_superhost' : pl.Boolean,
+          'multi' : pl.Int64,
+          'biz' : pl.Int64,
+          'cleanliness_rating' : pl.Float64,
+          'guest_satisfaction_overall' : pl.Float64,
+          'bedrooms' : pl.Int64,
+          'dist' : pl.Float64,
+          'metro_dist' : pl.Float64,
+          'attr_index' : pl.Float64,
+          'attr_index_norm' : pl.Float64,
+          'rest_index' : pl.Float64,
+          'rest_index_norm' : pl.Float64,
+          'lng' : pl.Float64,
+          'lat' : pl.Float64,
+          'strict' : pl.Boolean,
+ }
+
+# Read dataframe
+df = pl.read_csv(os.path.join(rDir, 'vienna_weekends.csv'), dtypes = schema)
+```
+
+##### **Output**
+```
+ComputeError: Could not parse `4.0` as dtype Int64 at column 'person_capacity' (column number 6).
+The current offset in the file is 270 bytes.
+
+You might want to try:
+- increasing `infer_schema_length` (e.g. `infer_schema_length=10000`),
+- specifying the correct dtype with the `dtypes` argument
+- setting `ignore_errors` to `True`,
+- adding `4.0` to the `null_values` list.
+```
+
+The problem with predefining a schema on data set reading, is that if a given value does not match the predefined data type, it will return an error; the `dtype=schema` argument will not try to cast the elements.
+
+What we can do solve this issue, is load our data set without inferring its schema, and then cast all columns using our `schema` dictionary:
+
+##### **Code**
+```Python
+# Load Vienna data set without infering schema
+df = pl.read_csv(os.path.join(rDir, 'vienna_weekends.csv'), infer_schema_length=0)
+
+# Iteratively cast data types
+for i, x in schema.items():
+    df = df.with_columns(pl.col(i).cast(x), strict = False)
+```
+
+If we look closely, we included a new parameter `infer_schema_length=0`, which tells `Polars` that we don't want an inferred schema. This will set the data type to `Utf8` for all columns.
+
+##### **Output**
+```
+ArrowErrorException: NotYetImplemented("Casting from LargeUtf8 to Boolean not supported")
+```
+
+The problem with this approach is that `pl.Boolean` type casting accepts a capitalized string. Since we have some columns with their boolean value in lowercase, this method also returns an error.
+
+We can fix this by adding an exception handling specific for this type of errors:
+
+##### **Code**
+```Python
+for i, x in schema.items():
+    try:
+        df = df.with_columns(pl.col(i).cast(x), strict = False)
+        
+        # If we encounter a boolean lowercased column, we need to treat it specially
+    except:
+        df = df.with_columns(pl.col(i) == 'true')
+        df = df.with_columns(pl.col(i).cast(x), strict = False)
+```
+
+Whenever an exception is raised, we regenerate the entire column by making a logical comparison against `"true"`. This fills our target column with actual boolean values so we don't even have to cast it.
+
+This of course, is somewhat problematic in cases when we don't fully know the nature of our data, since any exception will be caught and treated as if it were a `pl.Boolean` type casting error.
+
+We can do further manipulations and perfect our exception handling, but that is out of the scope of this segment.
+
+Whenever designing a data loading pipeline, we must account for all these types of details; otherwise, our program will underperform and even break.
 
 ---
 
 # Conclusions
 In this segment we've gone from zero to `Polars`; it's a lot to digest, but the important thing is that we covered the most relevant functionalities, and we can extend from here consulting external resources.
 
-For those already familiar with `pandas`, there's this great [cheatsheet](https://www.rhosignal.com/posts/polars-pandas-cheatsheet/) which covers translations of the most relevant `polars` operations.
+For those already familiar with `Pandas`, this great [cheatsheet](https://www.rhosignal.com/posts/polars-pandas-cheatsheet/) covers `Polars` translations of the most relevant `Pandas` operations.
 
-One disadvantage about `Polars`, is the lack of community discussing the library; `Pandas` is everywhere, all the time. Hopefully more people adopt `Polars` in the future.
+One disadvantage about `Polars`, is the lack of community discussing the library; `Pandas` is everywhere, all the time, and there is a vast amount of resources out there. Hopefully more people will adopt `Polars` in the future.
 
 ---
 
 # References
-- [Polars Official Page, Home](https://www.pola.rs/)
-- [Polars User Guide](https://pola-rs.github.io/polars-book/user-guide/)
-- [Cheatsheet for Pandas to Polars](https://www.rhosignal.com/posts/polars-pandas-cheatsheet/)
+- [`Polars` Official Page, Home](https://www.pola.rs/)
+- [`Polars` User Guide](https://pola-rs.github.io/polars-book/user-guide/)
+- [Cheatsheet for Pandas to `Polars`](https://www.rhosignal.com/posts/polars-pandas-cheatsheet/)
+- [`Polars` Official Page, GroupBy](https://pola-rs.github.io/polars-book/user-guide/dsl/groupby.html)
+- [`Polars` Official Page, Data Types](https://pola-rs.github.io/polars/py-polars/html/reference/datatypes.html)
 
 ---
 

@@ -8,17 +8,8 @@ Here you will find my collection of articles related to specific modules, librar
 Each article discusses one of the components above, and consists of a detailed explanation & main features, along with hands-on examples.
 
 ## Table of Contents
-1. [Network & Servers](https://github.com/pabloagn/documentation/tree/master/network-and-servers)
-	1. [QNAP NAS](https://github.com/pabloagn/documentation/blob/master/network-and-servers/NAS.md)
-	2. [WinSCP](https://github.com/pabloagn/documentation/blob/master/network-and-servers/WinSCP.md)
-2. [Programming Languages](https://github.com/pabloagn/documentation/tree/master/programming-languages)
-	1. [Julia](https://github.com/pabloagn/documentation/blob/master/programming-languages/julia.md)
-3. [Terminal](https://github.com/pabloagn/documentation/tree/master/terminal)
-	1. [PowerShell 7](https://github.com/pabloagn/documentation/blob/master/terminal/powershell-7.md)
-4. [Visualization & Graphic Design](https://github.com/pabloagn/documentation/tree/master/visualization-and-graphic-design)
-	1. [GIMP](https://github.com/pabloagn/documentation/blob/master/visualization-and-graphic-design/GIMP.md)
-5. [Writing & Formatting](https://github.com/pabloagn/documentation/tree/master/writing-and-formatting)
-	1. [Markdown](https://github.com/pabloagn/documentation/blob/master/writing-and-formatting/markdown.md)
+1. [Data Science](https://github.com/pabloagn/deep-dives/tree/master/data-science)
+	1. [Polars: A Lightning-Fast DataFrame Library for Python and Rust](https://github.com/pabloagn/deep-dives/blob/master/data-science/polars-a-lightning-fast-dataframe-library-for-python-and-rust/polars-a-lightning-fast-dataframe-library-for-python-and-rust.md)
 
 ## Website
 You can also directly consult the [Deep Dives](https://pabloagn.com/deep-dives/) page on my website.

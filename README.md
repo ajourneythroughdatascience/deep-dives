@@ -1,6 +1,6 @@
 # deep-dives
 
-![alt text](https://raw.githubusercontent.com/pabloagn/digital-assets/master/deep-dives-cover-image.jpg "Deep Dives Cover Image")
+![alt text](https://pabloagn.com/wp-content/uploads/2023/04/deep-dives-cover-image.jpg "Deep Dives Cover Image")
 
 ## About
 Here you will find my collection of articles related to specific modules, libraries, extensions and plugins.

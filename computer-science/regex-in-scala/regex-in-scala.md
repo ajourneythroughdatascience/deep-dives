@@ -172,14 +172,38 @@ All the RegEx will be handled by an internal library called `scala.util.matching
 ---
 
 # A practical example
-We'll now create a very simple application that reads a csv file, and matches certain fields by using RegEx. For this, we'll use our `Main.scala` file. 
+We'll now create a very simple application that reads a csv file, and matches certain fields by using RegEx.
 
-We'll also use three different csv files:
-- [`movies_shows.csv`]()
-- [`novels.csv`]()
-- [`characters.csv`]()
+## 1. The raw data
+For this project, we'll use three different CSV files:
+- [`movies_shows.csv`](https://raw.githubusercontent.com/pabloagn/deep-dives/master/computer-science/regex-in-scala/regex-matching/utils/movies_shows.csv): A set of movies & tv shows including:
+	- `Title`
+	- `Type`
+	- `Year`
+	- `Rating`
+	- `Duration`
+	- `Country`
+	- `Director`
+- [`novels.csv`](https://raw.githubusercontent.com/pabloagn/deep-dives/master/computer-science/regex-in-scala/regex-matching/utils/novels.csv): A set of fiction novels containing:
+	- `Title`
+	- `Author`
+	- `Year`
+	- `Rating`
+	- `Genre`
+- [`characters.csv`](https://raw.githubusercontent.com/pabloagn/deep-dives/master/computer-science/regex-in-scala/regex-matching/utils/characters.csv): A set of characters belonging to movies, tv shows & fiction novels, containing:
+	- `Name`
+	- `LastName`
+	- `Address`
+	- `Profession`
+	- `Age`
+	- `EmailAddress`
+	- `Phone`
 
-We'll open it, and start by importing the required dependencies:
+Some files are more damaged than others, which is exactly what we'll investigate in this project; our task will be to find all the records that are incorrectly formatted or misspelled, by writing some regular expressions. 
+
+## 1. Importing the required dependencies
+
+When we created our project, a `Main.scala` file was also generated. We'll open it, and start by importing the required dependencies:
 
 ##### **Code**
 ```Scala
@@ -188,7 +212,16 @@ import java.io.FileReader
 import scala.util.matching.Regex
 ```
 
+Where:
+- A
+- B
+- C
+
+## 2. Defining our main function
+
 Then, we'll define a main function and call it `readCSV`; this function will read our target CSV file.
+
+
 
 ---
 

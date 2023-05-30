@@ -14,39 +14,36 @@ Higher-order functions are functions that take other functions as arguments, and
 
 In this Deep Dive, we'll discuss the main higher-order functions available in Scala, specifically for lists. However, we'll also discuss other collections. We'll go over each one of them by explaining in detail why they're for, how to use them, and providing various examples, ranging from simpler ones to more complex ones.
 
-We'll be using Scala worksheets which can be found in the [Deep Dive Repo](https://github.com/pabloagn/deep-dives/tree/master/computer-science/higher-order-collection-functions-in-scala).
+We'll be using Scala worksheets which can be found in the [Deep Dive Repo](https://github.com/ajourneythroughdatascience/deep-dives/tree/master/computer-science/higher-order-collection-functions-in-scala).
 
 ---
 
 # Table of Contents
-- Preparing our environment
-- An introduction to higher-order functions
-- An introduction to collections in Scala
-- Higher-order list functions
-	- map
-	- flatMap
-	- filter
-	- foldLeft
-	- foldRight
-	- reduceLeft
-	- reduceRight
-	- scanLeft
-	- scanRight
-	- zip
-	- zipWithIndex
-	- forall
-	- exists
-	- groupBy
-	- sort
-	- sortBy
-	- sortWith
-	- minBy
-	- maxBy
-	- Creating a generic higher-order collection function
-	- Chaining functions
-		- mapReduce
-		- A
-		- A
+- Preparing our environment]()
+- An introduction to higher-order functions]()
+- An introduction to collections in Scala]()
+- Higher-order list functions]()
+	- map]()
+	- flatMap]()
+	- filter]()
+	- foldLeft]()
+	- foldRight]()
+	- reduceLeft]()
+	- reduceRight]()
+	- scanLeft]()
+	- scanRight]()
+	- zip]()
+	- zipWithIndex]()
+	- forall]()
+	- exists]()
+	- groupBy]()
+	- sorted]()
+	- sortBy]()
+	- sortWith]()
+	- minBy & maxBy]()
+	- Creating a generic higher-order collection function]()
+	- Chaining functions]()
+		- mapReduce]()
 - [Conclusions](#conclusions)
 - [References](#references)
 - [Copyright](#copyright)
@@ -967,64 +964,192 @@ groupedInts("Odd")
 res43: List[Int] = List(1, 3, 5, 7, 9)
 ```
 
-## 15. sort
+## 15. sorted
+`sorted` is used for sorting collections. The sort is stable, meaning that elements that are equal (*as determined by `ord.compare`*) appear in the same order in the sorted sequence as in the original. 
 
-The generic function signature for `scanRight` is the following:
+The generic function signature for `sort` is the following:
 
 ##### **Code**
 ```Scala
-def scanRight[A, B](list: List[A])(initialValue: B)(accumulator: (A, B) => B): List[B]
+def sort[A](list: List[A])(implicit ord: Ordering[A]): List[A]
 ```
 
 Where:
+- The `sort` function takes a list of elements of type `A` and an implicit `Ordering` instance for type `A`.
+- It sorts the elements of the list in ascending order according to the natural ordering of type `A`.
+- The return type is `List[A]`, representing the sorted list.
+
+Sorted can be called without parameters, or with an `ord` parameter included:
+
+##### **Code**
+```Scala
+val myList23: List[Int] = List(5, 2, 3, 1, 4)
+
+// Calling sorted without parameters
+myList23.sorted
+
+// Calling sorted with ord parameter
+myList23.sorted(Ordering.Int.reverse)
+```
+
+##### **Output**
+```
+res44: List[Int] = List(1, 2, 3, 4, 5)
+res45: List[Int] = List(5, 4, 3, 2, 1)
+```
+
+As we can see from the generic function signature, the `ord` parameter requires a `Ordering[B]` type. `Ordering` is a trait whose instances each represent a strategy for sorting instances of a type. I our case, we used `reverse`, but we can use custom functions as well.
 
 ## 16. sortBy
+sortBy is similar to `sorted`, in that it sorts a collection. The difference is that sortBy accepts sorting using multiple attributes of the elements inside the collection. This is not super useful if we only have a list of integers, but becomes interesting when we have collections of objects.
 
-
-The generic function signature for `scanRight` is the following:
+The generic function signature for `sortBy` is the following:
 
 ##### **Code**
 ```Scala
-def scanRight[A, B](list: List[A])(initialValue: B)(accumulator: (A, B) => B): List[B]
+def sortBy[A, B](list: List[A])(f: A => B)(implicit ord: Ordering[B]): List[A]
 ```
 
 Where:
+- The `sortBy` function takes a list of elements of type `A`, a function `f` that maps elements of type `A` to keys of type `B`, and an implicit `Ordering` instance for type `B`.
+- It sorts the elements of the list based on the keys obtained from applying the function `f` to each element.
+- The return type is `List[A]`, representing the sorted list.
+
+Let us exemplify by creating a collection of objects, including some simple attributes we can use to sort our collection:
+
+##### **Code**
+```Scala
+// Declare a Doggo class
+case class Doggo(name: String, age: Int, city: String, owner: String, breed: String)
+
+// Create some instances
+val Tommy: Doggo = new Doggo("Tommy", 12, "Budapest", "Laszlo", "Borzoi")
+val Borys: Doggo = new Doggo("Borys", 10, "Warsaw", "Bartosz", "Husky")
+val Ramon: Doggo = new Doggo("Ramon", 15, "San Juan", "Alondra", "Labradoodle")
+val Fumiko: Doggo = new Doggo("Fumiko", 15, "Tokyo", "Keiko", "Shiba Inu")
+
+// Create a list of Doggos
+val listOfDoggos: List[Doggo] = List(Tommy, Borys, Ramon, Fumiko)
+println(listOfDoggos)
+```
+
+##### **Output**
+```
+// List(Doggo(Tommy,12,Budapest,Laszlo,Borzoi), Doggo(Borys,10,Warsaw,Bartosz,Husky), Doggo(Ramon,15,San Juan,Alondra,Labradoodle), Doggo(Fumiko,15,Tokyo,Keiko,Shiba Inu))
+```
+
+As we can see, we have a total of 5 attributes:
+- Four `String` type attributes
+- One `Int` type attribute
+
+We can then sort by one or more attributes using `sortBy`:
+
+##### **Code**
+```Scala
+// Sort by one attribute
+listOfDoggos.sortBy(_.name)
+
+// Sort by two attributes
+listOfDoggos.sortBy(doggo => (doggo.age, doggo.name))
+```
+
+##### **Output**
+```
+res47: List[Doggo] = List(Doggo(Borys,10,Warsaw,Bartosz,Husky), Doggo(Fumiko,15,Tokyo,Keiko,Shiba Inu), Doggo(Ramon,15,San Juan,Alondra,Labradoodle), Doggo(Tommy,12,Budapest,Laszlo,Borzoi))
+
+res48: List[Doggo] = List(Doggo(Borys,10,Warsaw,Bartosz,Husky), Doggo(Tommy,12,Budapest,Laszlo,Borzoi), Doggo(Fumiko,15,Tokyo,Keiko,Shiba Inu), Doggo(Ramon,15,San Juan,Alondra,Labradoodle))
+```
+
+In `res48`, we have two doggos with the same age, and the sorting is ultimately resolved using the doggos' names.
+
+We can imagine that we can use whichever object we can think of, and include a number of attributes to sort by.
 
 ## 17. sortWith
+`sortWith` also sorts elements in a collection. The extra feature here, is that we can use a custom function to sort.
 
-
-The generic function signature for `scanRight` is the following:
-
-##### **Code**
-```Scala
-def scanRight[A, B](list: List[A])(initialValue: B)(accumulator: (A, B) => B): List[B]
-```
-
-Where:
-
-## 18. minBy
-
-
-The generic function signature for `scanRight` is the following:
+The generic function signature for `sortWith` is the following:
 
 ##### **Code**
 ```Scala
-def scanRight[A, B](list: List[A])(initialValue: B)(accumulator: (A, B) => B): List[B]
+def sortWith[A](list: List[A])(comparator: (A, A) => Boolean): List[A]
 ```
 
 Where:
+- The `sortWith` function takes a list of elements of type `A` and a binary comparison function `comparator`.
+- It sorts the elements of the list based on the comparison function `comparator`.
+- The comparison function should return `true` if the first element should be ordered before the second element, and `false` otherwise.
+- The return type is `List[A]`, representing the sorted list.
 
-## 19. maxBy
-
-
-The generic function signature for `scanRight` is the following:
+We can build on our previous example, and declare a sorting function that will define how noisy a doggo is, based on its breed:
 
 ##### **Code**
 ```Scala
-def scanRight[A, B](list: List[A])(initialValue: B)(accumulator: (A, B) => B): List[B]
+def noiseLevel(breed: String): Int = breed match
+    case "Husky" => 10
+    case "Shiba Inu" => 8
+    case "Labradoodle" => 4
+    case "Borzoi" => 3
+
+listOfDoggos.sortWith((x, y) => (noiseLevel(x.breed) > noiseLevel(y.breed)))
+```
+
+And to no surprise, Borys turns out to be the first place in the list:
+
+##### **Output**
+```
+res49: List[Doggo] = List(Doggo(Borys,10,Warsaw,Bartosz,Husky), Doggo(Fumiko,15,Tokyo,Keiko,Shiba Inu), Doggo(Ramon,15,San Juan,Alondra,Labradoodle), Doggo(Tommy,12,Budapest,Laszlo,Borzoi))
+```
+
+## 18. minBy & maxBy
+`minBy` & `maxBy` are equivalent functions: Both take a predicate function as their parameter and apply it to every element in the collection to return the smallest/biggest element:
+
+The generic function signature for `minBy` is the following:
+
+##### **Code**
+```Scala
+def minBy[A, B](list: List[A])(f: A => B)(implicit ord: Ordering[B]): A
 ```
 
 Where:
+- The `minBy` function takes a list of elements of type `A`, a function `f` that maps elements of type `A` to keys of type `B`, and an implicit `Ordering` instance for type `B`.
+- It finds the minimum element from the list based on the keys obtained from applying the function `f` to each element.
+- The return type is `A`, representing the minimum element.
+- `A` represents the type of elements in the list.
+- `B` represents the type of keys obtained from the key function or mapping function.
+- `ord: Ordering[T]` is an implicit parameter that provides an instance of the `Ordering` type class for type `T`.
+- The implicit `Ordering` instance is used to define the ordering of elements when sorting or finding minimum/maximum values.
+
+While the generic function signature for `maxBy` is the following:
+
+##### **Code**
+```Scala
+def maxBy[A, B](list: List[A])(f: A => B)(implicit ord: Ordering[B]): A
+```
+
+Where:
+- The `maxBy` function takes a list of elements of type `A`, a function `f` that maps elements of type `A` to keys of type `B`, and an implicit `Ordering` instance for type `B`.
+- It finds the maximum element from the list based on the keys obtained from applying the function `f` to each element.
+- The return type is `A`, representing the maximum element.
+- `A` represents the type of elements in the list.
+- `B` represents the type of keys obtained from the key function or mapping function.
+- `ord: Ordering[T]` is an implicit parameter that provides an instance of the `Ordering` type class for type `T`.
+- The implicit `Ordering` instance is used to define the ordering of elements when sorting or finding minimum/maximum values.
+
+Let us exemplify both by using our previous example, where we want to get the loudest and quietest doggo in the pack, the first one to counterattack our neighbor's lawn mower at 6 am, and the latter to keep for ourselves:
+
+##### **Code**
+```Scala
+listOfDoggos.minBy(x => noiseLevel(x.breed))
+listOfDoggos.maxBy(x => noiseLevel(x.breed))
+```
+
+##### **Output**
+```
+res50: Doggo = Doggo(Tommy,12,Budapest,Laszlo,Borzoi)
+res51: Doggo = Doggo(Borys,10,Warsaw,Bartosz,Husky)
+```
+
+Nah, Borszois are not my cup of tea. I'll stick with Borys. Good luck neighbor.
 
 ---
 
@@ -1100,30 +1225,18 @@ Here, we're chaining two functions: `map` & `reduce`, where:
 - `map` applies a square operation to each element contained in the nested lists.
 - `reduce` reduces all elements on each nested list to a single number, by performing a sum operation.
 
-## 1. flatMap
-We already saw this implementation, which consists of two chained functions:
-- `flatten` or `flatMap`
-- `map`
-
-Let us declare a function that calculates the 
-
-##### **Code**
-```Scala
-
-```
-
 ---
 
 # Conclusions
-We've reviewed multiple yet simple mechanisms we can employ to make our code cleaner, more elegant, modular, usable, scalable and safer. These measures can not only help us become better programmers but better collaborators. It will make reading code a pleasure instead of an agonizing process and instantly boost our credibility.
+We've reviewed the most important higher-order collection functions available in Scala, while mentioning their generic signature, discussing some of their most important traits, and implementing recursive alternatives using pattern matching that helped us exemplify more clearly how they work. We also presented some simple examples that hopefully helped clear things up. Lastly, we went over an example where we created our own higher-order collection function variation using type variables, and we also discuss how we could chain one or more functions to build more complex transformation queries.
+
+One of Scala's specialties is working with higher-order functions; a great deal of the language is implemented using them. However, we must bear in mind that they are not always the best or more efficient approach; they are extremely powerful, but sometimes we can use other methods such as for-expressions for a more clear and concise syntax.
 
 ---
 
 # References
-- [Python Documentation, Built-in Exceptions](https://docs.python.org/3/library/exceptions.html)
-- [Python Documentation, Errors & Exceptions](https://docs.python.org/3/tutorial/errors.html)
-- [Towards Data Science, What happens when you import a Python module?](https://towardsdatascience.com/what-happens-when-you-import-a-python-module-ad6c0efd2640)
-- [Towards Data Science, 3 data structures for faster Python Lists](https://towardsdatascience.com/3-data-structures-for-faster-python-lists-f29a7e9c2f92)
+- [Higher-Order Functions, Scala](https://docs.scala-lang.org/tour/higher-order-functions.html)
+- [Functional Programming Principles in Scala, Coursera / EPFL](https://www.coursera.org/learn/scala-functional-programming
 
 ---
 

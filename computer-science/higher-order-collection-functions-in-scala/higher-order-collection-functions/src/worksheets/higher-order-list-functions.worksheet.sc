@@ -257,6 +257,60 @@ def groupNumbersStringKey(x: Int): String =
 val groupedInts = myList22.groupBy(groupNumbersStringKey)
 groupedInts("Odd")
 
+// ---------------------
+// sort
+// ---------------------
+
+val myList23: List[Int] = List(5, 2, 3, 1, 4)
+
+// Calling sorted without parameters
+myList23.sorted
+
+// Calling sorted with ord parameter
+myList23.sorted(Ordering.Int.reverse)
+
+// ---------------------
+// sortBy
+// ---------------------
+
+// Declare a Doggo class
+case class Doggo(name: String, age: Int, city: String, owner: String, breed: String)
+
+// Create some instances
+val Tommy: Doggo = new Doggo("Tommy", 12, "Budapest", "Laszlo", "Borzoi")
+val Borys: Doggo = new Doggo("Borys", 10, "Warsaw", "Bartosz", "Husky")
+val Ramon: Doggo = new Doggo("Ramon", 15, "San Juan", "Alondra", "Labradoodle")
+val Fumiko: Doggo = new Doggo("Fumiko", 15, "Tokyo", "Keiko", "Shiba Inu")
+
+// Create a list of Doggos
+val listOfDoggos: List[Doggo] = List(Tommy, Borys, Ramon, Fumiko)
+println(listOfDoggos)
+
+// Sort by one attribute
+listOfDoggos.sortBy(_.name)
+
+// Sort by two attributes
+listOfDoggos.sortBy(doggo => (doggo.age, doggo.name))
+
+// ---------------------
+// sortWith
+// ---------------------
+
+def noiseLevel(breed: String): Int = breed match
+    case "Husky" => 10
+    case "Shiba Inu" => 8
+    case "Labradoodle" => 4
+    case "Borzoi" => 3
+
+listOfDoggos.sortWith((x, y) => (noiseLevel(x.breed) > noiseLevel(y.breed)))
+
+// ---------------------
+// minBy, maxBy
+// ---------------------
+
+listOfDoggos.minBy(x => noiseLevel(x.breed))
+listOfDoggos.maxBy(x => noiseLevel(x.breed))
+
 
 // ---------------------
 // A generic higher-order collection function

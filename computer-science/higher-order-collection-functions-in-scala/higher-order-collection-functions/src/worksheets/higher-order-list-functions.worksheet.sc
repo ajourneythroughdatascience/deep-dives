@@ -328,13 +328,11 @@ genericMap(myListInts, x => x * 2)
 genericMap(myListStrings, x => x * 2)
 genericMap(myListDoubles, x => x * 2)
 
-
-
 // ---------------------
 // Chaining functions
 // ---------------------
 
-// map reduce
+// map + reduce
 def mapReduce(xs: List[List[Int]]): List[Int] = xs match
     case Nil => Nil
     case y :: ys => y.map(x => x * x).reduce(_ + _) :: mapReduce(ys)
@@ -343,11 +341,14 @@ val myList5: List[List[Int]] = List(List(1, 2, 3), List(4, 5, 6), List(7, 8, 9))
 
 mapReduce(myList5)
 
-// flat map reduce
-def flatMapReduce(xs: List[List[Int]]): List[Int] = xs match
+// zip + flatten + order by
+def zipFlattenOrderBy(x: List[List[String]]): List[Tuple] = x match 
     case Nil => Nil
-    case y :: ys => (y.map(x => x * x).reduce(_ + _) :: mapReduce(ys))
+    case y :: ys => y.zip(ys.flatten(x => x)).sortBy(_._1)
 
-val myList6: List[List[Int]] = List(List(1, 2, 3), List(4, 5, 6), List(7, 8, 9))
+val writerNames: List[String] = List("Emily", "Leo", "Charles", "Oscar", "Alexander", "Henry")
+val writerSurnames: List[String] = List("Brontë", "Tolstoy", "Dickens", "Wilde", "Pushkin", "James")
 
-flatMapReduce(myList5)
+val writerList: List[List[String]] = List(writerNames, writerSurnames)
+
+zipFlattenOrderBy(writerList)

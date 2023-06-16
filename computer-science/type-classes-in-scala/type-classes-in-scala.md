@@ -21,9 +21,14 @@ We'll be using Scala worksheets which can be found in the [Deep Dive Repo](http
 ---
 
 # Table of Contents
-- What are type classes?
-- What are implicits?
-- 
+- What are type classes?]()
+- What are implicits?]()
+- Type classes & implicits together]()
+	- Defining a type class]()
+	- Ad-hoc polymorphism]()
+- Some practical examples]()
+	- Requesting data from an external API]()
+	- Aaa]()
 - [Conclusions](#conclusions)
 - [References](#references)
 - [Copyright](#copyright)
@@ -166,7 +171,7 @@ implicit object SumOfStrings extends SumOfLists[String]:
     override def sumElements(xs: List[String]): String = xs.mkString("")
 ```
 
-## 2. Ad-Hoc Polymorphism
+## 2. Ad-hoc polymorphism
 Ad-hoc polymorphism is the fruit of type classes used in functions where we have implicit arguments. This might sound unintelligible, but it's actually not that hard once we include an example. Continuing from our sum function, we would now want to redesign it to accept the traits we just declared; this will finally create a truly generic function, but with proper defined methods for each type case. And the best of all, is that it will be dynamic, meaning the compiler will decide which method to use, depending on the type we throw as argument.
 
 This is known as [ad-hoc polymorphism](https://en.wikipedia.org/wiki/Ad_hoc_polymorphism). Formally, we can define it as a programming concept used to describe functions with the same name that are executed differently, depending on the variable or argument type. It is also referred to as “*function overloading*” or “*method overloading*".

@@ -10,37 +10,34 @@
 
 [![type](https://img.shields.io/static/v1?label=Type&message=deep-dive&color=e60048&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAi0lEQVRIS+2WMQ7AIAhF/UNXrtP7rz2OYxeqTWxMTBUSxQVXfnzyQQKC8YExL7zAGCNbgIkIsIKVhBw4vbR7unR6Gp0LvwxXd2v+EvkdDpxWXpWlRTyi9/pABRyBJHEHSlxSadxSlV0SsVsqcUml2W/pynWxnsXNisHMRxrCl8qvH3ECnQDuOmy+0zwB4WNxmUKgwwAAAABJRU5ErkJggg==&labelColor=1a1a1a&style=flat)](https://pabloagn.com/deep-dives/) [![category](https://img.shields.io/static/v1?label=Category&message=computer-science&color=e60048&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAB9UlEQVRIS6VWMU7DQBDkDAQEdrAoCISCAomCL1DxC95Azy9oeQS/oOIHVFAgREFoCHGCRSzZzEU+63LZ9W6CO/vudmZ2d9Zn1pTPaDSqut2usduHw+FpFEUv7t1fk8LNAkiPDWj3+ADuTPjNvXMxWwGzLCuqqtqwh5MkiY0xEwfOAfrEKFAWUBO4DZQDXgCEqjuouvbZUanUrocpngMMVUkKtKC+WhFQUudAUd8r1PkepJ/w7Tysn4uzkNJlascF9WOASAki6w0xrn19b3Gpps5y3kRfJADPZgr9gJSP0EgDHDiQ/Mp50PfxAmDtuQhsZmb/z0OVhwSkmGrSGp5bGRDp3EFaJ5JaiahdZ2vYNj/JkWVMgW7sgNw2yOW+99gacp7TeFE72OcUrgo4Ho93+/3+D5T9QmGHm0BNSnHgMI7jj9Ai2tElZGCK9S3S+GA4BcNNydBaIuEstu/iLJWCa+pLDm+Nz+xQAsBenucnRVG8asFq0s/Yf9YoVAI21wyn3N4I7M1A8ijWHwB42XrFqIO9YfMRlVqqyXC5ukED3nIEVJcoBXv1lmWa5gIpeeQioyTWVj1uXf0DpgKUZbmfpunXKnVnU9rWDKiTHRSDNkDu36iqIQK/Q+mxU8sBYniL/1EVoJ9Wqwo/5x6Cf9YKv6Em1XbNH5bGfSwvuRe1AAAAAElFTkSuQmCC&labelColor=1a1a1a&style=flat)](https://pabloagn.com/categories/computer-science/) [![technologies](https://img.shields.io/static/v1?label=Technologies&message=JavaScript,%20VS%20Code&color=e60048&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA1klEQVR4nM2RMW7CUBBEnUikIQUIlBJxrrQgJG7ABRBnoUkaWhpoUgWJlgNYbvz/G1dUi1ayoy87rpOtVrszs6OdLPtXlef5UNJXjHHcCwohjMzsKZ3FGN+Bq/e+c0xHGfiWtEznkg6SNnW/dIxjs0YJ2AMnM3tJSFPgHkKY17gBcAQ+zOw5A3aSbsCkdW0NnNOZY2rstpcInJ3cS/SzwGdqtSzLmdusquqtIXWsehVF8QpcJK1qmxt/TMv6wjE/z0leP27i8Ag8inT/axxtAQ+9o/zn9QD3JOiyTjnQEQAAAABJRU5ErkJggg==&labelColor=1a1a1a&style=flat)](https://pabloagn.com/technologies/) [![website article](https://img.shields.io/static/v1?label=Website&message=Post%20Link&color=e60048&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB+ElEQVR4nO2VOYgUURCGR/BAI4MN1EwjI89EMDYQvNBNNNlcE0VBUdlUUSMjj2BF2UDRePDAwGzNF2GNPIYd8Hjv/6YnEHSf/FIDPTJiu4nJFBTd1Kv6/nrVBd1q/S8DJiU9AmaBm5LOSjoATPwDY0LSQUnnzDArmJOjkqclvQceSHohaR6oJC1JeiPprqT9pZSVg5pSyirH4sw5S1EzbwZwP5jTIwWBdj1meEppZ6/XOyXpCdCX9Am4Fv45Yo+Bk1VV7ag3FNz2kKC7yznvHiX4u3U6nXU55xPAW7vfHfvLmNtmW8NaFux67k0Ea03esTfJJQTj23bHgiNtPNK6jZem3Wpg46Wp23hp2q0GNl6axksjaRGYkXRF0mnHq6ra2HSk/X5/k6RDks6YEazFPwnuBS5KuirptqTnkj4CJZ4zwNFSytqBoP/2wDHgXi33A/BM0i2zzDR7SBC4LGlPr9fb5huVUlYMus45b5E0FYJfgQS8C8/Al7jJVEpp86DODLPMNDs0up7xXBQZVKLLb8CCpIfA+ZzzvpTS+lLKGuAI8DT8cClltc+c49yoWQjGL140ao25oW8QXW1IKe3KOR8Hbkh66ZtI+i7plaG+iR244JjP3HDkXnetGWbVp9XYopHtHgvwWtIPu9+BSx7bssBNDdhqX07xT/Jbz1SBBDGHAAAAAElFTkSuQmCC&labelColor=1a1a1a&style=flat)](https://pabloagn.com/deep-dives/destructuring-in-javascript/)
 
-Destructuring is a very powerful & widely-used syntactic construct that provides us with the ability to decompose a given object or structure into smaller components. This is specially useful when we have, for example, objects with nested elements and would like to extract all or some of them and assign them to variables, without having to write multiple lines of code to do so.
+Destructuring is a very powerful & widely-used syntactic construct that allows us to decompose a given object or structure into smaller components. This is especially useful when we have, for example, objects with nested elements and would like to extract all or some of them and assign them to variables without having to write multiple lines of code to do so.
 
-Destructuring can be used in 3 main JavaScript structures:
-- Arrays
-- Objects
-- Function parameters
+Destructuring can be used in various JavaScript structures, such as arrays, objects, function parameters, sets, maps, and even iterables. Each case offers a specific syntax. However, the overall process fairly is similar. 
 
-In this Deep Dive, we'll discuss what destructuring is, how can it be applied to nested structures such as multi-dimensional arrays and objects, how can it be applied to function parameters, and some of its main use cases. We'll also introduce some examples that will hopefully help illustrate this concept better.
+In this Deep Dive, we'll discuss what destructuring is, how it can be applied to nested structures such as multi-dimensional arrays and objects, how it can be applied to function parameters, and some of its main use cases. Since the list is extensive, we'll not go into all the structures where destructuring can be used. We'll also introduce some examples that will hopefully help illustrate this concept better.
 
 We'll be using JavaScript scripts which can be found in the [Deep Dive Repo](https://github.com/pabloagn/blog/tree/master/computer-science/destructuring-in-javascript).
 
 ---
 
 # Table of Contents
-- What is destructuring?]()
-- Why is it useful?]()
-	- Working with APIs]()
-	- Simplified code]()
-	- Power]()
-- General syntax]()
-	- Arrays]()
-	- Objects]()
-	- Function parameters]()
-- Main features]()
-	- Skipping elements]()
-	- Using starter values]()
-	- Renaming variables]()
-- Some practical examples]()
-	- Deeply nested objects]()
-	- Extracting intermittently from an unknown array]()
-	- An object containing multiple argument groups]()
+- [What is destructuring?](#what-is-destructuring)
+- [Why is it useful?](#why-is-it-useful)
+	- [Working with APIs](#1-working-with-apis)
+	- [Simplified code](#2-simplified-code)
+	- [Power](#3-power)
+- [General syntax](#general-syntax)
+	- [Arrays](#1-arrays)
+	- [Objects](#2-objects)
+	- [Function parameters](#3-function-parameters)
+- [Main features](#main-features)
+	- [Skipping elements](#1-skipping-elements)
+	- [Using starter values](#2-using-starter-values)
+	- [Renaming variables](#3-renaming-variables)
+- [Some practical examples](#some-practical-examples)
+	- [Deeply nested objects](#1-deeply-nested-objects)
+	- [Extracting intermittently from an unknown array](#2-extracting-intermittently-from-an-unknown-array)
+	- [An object containing multiple argument groups](#3-an-object-containing-multiple-argument-groups)
 - [Conclusions](#conclusions)
 - [References](#references)
 - [Copyright](#copyright)
@@ -48,15 +45,15 @@ We'll be using JavaScript scripts which can be found in the [Deep Dive Repo](ht
 ---
 
 # What is destructuring?
-Simply put, destructuring, also called matching, is a syntactic construct introduced in [ES6 (*ECMAScript 2015*)](http://es6-features.org/#Constants), that lets us deconstruct structures, assigning the nested components to variables in one single line of code.
+Simply put, destructuring, also called matching, is a syntactic construct introduced in [ES6 (*ECMAScript 2015*)](http://es6-features.org/#Constants) that lets us deconstruct structures, assigning the nested components to variables in one single line of code.
 
 We can see destructuring as a two-step process:
 1. Destructuring the structure
 2. Assigning the resulting components to variables
 
-This might sound really simple, but it's actually an extremely powerful feature. Let us understand why.
+This might sound simple, but it's an extremely powerful feature. Let us understand why.
 
-Let us imagine we have an object with multiple key-value pairs, and some of the values are arrays. We want to take that object, go for some of the values that have array structures, and assign a variable for each element inside these arrays.
+Let us imagine we have an object with multiple key-value pairs, and some values are arrays. We want to take that object, go for some of the values with array structures, and assign a variable for each element inside these arrays.
 
 Previous to ES6, this was possible by indexing:
 
@@ -104,26 +101,26 @@ This was just an example using arrays, but destructuring can also be applied to 
 ---
 
 # Why is it useful?
-Destructuring patterns in general, is an extremely useful feature; many languages implement variations of this technique:
+Destructuring patterns, in general, is an extremely useful feature; many languages implement variations of this technique:
 - **Scala** has the [pattern matching](https://docs.scala-lang.org/tour/pattern-matching.html) construct, where we can even deconstruct at the type level.
 - **Python** also supports deconstruction through its unpacking syntax, which allows us to assign values from a sequence (*such as a list or tuple*) to multiple variables simultaneously
 - **Ruby** has support for deconstruction assignment, commonly known as "*destructuring*" or "*parallel assignment*". It allows us to assign values from arrays or hashes to multiple variables.
-- Rust, similar to Scala, provides a pattern matching deconstruction feature, which allows us to extract and bind values from data structures, such as tuples or structs, to variables.
+- Rust, similar to Scala, provides a pattern-matching deconstruction feature, which allows us to extract and bind values from data structures, such as tuples or structs, to variables.
 
-Fair, deconstructing is popular, but why is it so valuable? Well, simply put, it allows us to extract nested elements from sometimes complex structures, without indexing, and using considerably less code than if we were to index values in a loop, or even worst, one by one.
+Fair, deconstructing is popular, but why is it so valuable? Simply put, it allows us to extract nested elements from sometimes complex structures without indexing and use considerably less code than if we were to index values in a loop or, even worst, one by one.
 
-One of the main use cases for deconstruction, specially in JavaScript, is when we're working with APIs, but of course, that's not the only one.
+One of the main use cases for deconstruction, especially in JavaScript, is when we're working with APIs, but of course, that's not the only one.
 
 ## 1. Working with APIs
-When working with external APIs, we have no guarantee that the structures returned will be simple, easy to understand, and well documented. Deconstruction can facilitate interaction with APIs that return complex data structures by easily extracting and assigning the relevant values, while keeping our code clean and readable.
+When working with external APIs, we have no guarantee that the structures returned will be simple, easy to understand, and well-documented. Deconstruction can facilitate interaction with APIs that return complex data structures by easily extracting and assigning the relevant values while keeping our code clean and readable.
 
 ## 2. Simplified code
 When using deconstruction, we're effectively removing the intermediaries; we remove the use of any temporary variable. With deconstruction, we can directly assign values to variables, making the code more concise and easier to understand. 
 
-Additionally, it's extremely flexible; if we're not comfortable performing the full deconstruction in one line of code, we can separate our transformations in multiple lines, by going one level at a time, similar to what we would do in a `for` loop. We are in control of the depth of deconstruction, and can even stay at top levels if we don't need the full granularity.
+Additionally, it's extremely flexible; if we're uncomfortable performing the full deconstruction in one line of code, we can separate our transformations into multiple lines by going one level at a time, similar to what we would do in a `for` loop. We are in control of the depth of deconstruction and can even stay at top levels if we don't need the full granularity.
 
 ## 3. Power
-There are languages that have more powerful features when talking about deconstruction constructs. For example, Scala, a strongly-typed language, lets us deconstruct at type level, opening the possibilities for performing even the most granular operations, while maintaining our code safe.
+Some languages have more powerful features when talking about deconstruction constructs. For example, Scala, a strongly-typed language, lets us deconstruct at the type level, opening the possibilities for performing even the most granular operations while maintaining our code safe.
 
 Even though JavaScript is a dynamically-typed language, and there's no need to think of use cases regarding types, it still provides very powerful use cases, for example, when we're trying to unpack complex structures containing multiple nested objects. Just imagine if we were to use a `for` loop to achieve this.
 
@@ -161,10 +158,10 @@ console.log(val1, val2, val3, val4);
 1 3 5 7
 ```
 
-In this example we introduced skipping elements, which we'll review shortly, but the idea is that we can go as deep as we'd like in terms of structure nesting, simply by mimicking the structure we're trying to deconstruct in the left side of the operation.
+In this example, we introduced skipping elements, which we'll review shortly. Still, the idea is that we can go as deep as we'd like in terms of structure nesting simply by mimicking the structure we're trying to deconstruct on the left side of the operation.
 
 ## 2. Objects
-The mechanics are similar with objects. The main difference is that, with the latter, we're not working with an iterable object; an object does not store keys in an ordered structure, instead, we purposefully provide a unique name for each value.
+The mechanics are similar to objects. The main difference is that, with the latter, we're not working with an iterable object; an object does not store keys in an ordered structure. Instead, we purposefully provide a unique name for each value.
 
 Thus, we cannot skip elements or use other names to assign our variables. Instead, we must use the actual object key's names:
 
@@ -192,9 +189,9 @@ A-10 Warthog { len: '53ft', wingspan: '57ft', height: '14ft' } {
 Once we have our variables assigned, we can rename them in the same expression. However, we'll leave this for later.
 
 ## 3. Function parameters
-Another extremely useful application consists of designing objects containing function parameters, and then deconstructing them inside the actual function. This is called as parameter packing/unpacking, and can be of use whenever we have functions with a considerable amount of arguments.
+Another useful application consists of designing objects containing function parameters and then deconstructing them inside the actual function. This is called parameter packing/unpacking and can be useful whenever we have functions with many arguments.
 
-We can declare a simple function, and pass its parameters in an object by using the following syntax:
+We can declare a simple function and pass its parameters into an object by using the following syntax:
 
 ##### **Code**
 ```JavaScript
@@ -234,7 +231,7 @@ Destructuring can be mainly applied to three different structures:
 - Function parameters
 
 ## 1. Skipping elements
-Additionally, we can also skip elements, depending if we're not interested on returning a given element. For example, following the `myObj` implementation we reviewed earlier, we can extract only the first and third interest by using the following syntax:
+Additionally, we can also skip elements, depending on if we're not interested in returning a given element. For example, following the `myObj` implementation we reviewed earlier, we can extract only the first and third interests by using the following syntax:
 
 ##### **Code**
 ```JavaScript
@@ -250,9 +247,9 @@ Reading Sleeping
 If we look closely, we skipped the middle element by simply not defining any variable in its place.
 
 ## 2. Using starter values
-There are times when we don't know if an index position will be there (*in the structure we're working on*). In those cases, it's useful to have some kind of fallback value; otherwise, JavaScript will return `undefined`, which may lead to unexpected behavior and hard-to-debug errors, if we don't handle these occurrences carefully.
+There are times when we don't know if an index position will be there (*in the structure we're working on*). In those cases, it's useful to have some kind of fallback value; otherwise, JavaScript will return `undefined`, which may lead to unexpected behavior and hard-to-debug errors if we don't handle these occurrences carefully.
 
-Destructuring lets us set predefined values for a given variable. For example, we might not know that the array inside the object we're trying to access contains only 3 values:
+Destructuring lets us set predefined values for a given variable. For example, we might not know that the array inside the object we're trying to access contains only three values:
 
 ##### **Code**
 ```JavaScript
@@ -318,7 +315,7 @@ Temperature:
 ```
 
 ## 3. Renaming variables
-We mentioned that, when destructuring objects, we needed to use the exact same variable names we declared when creating our object. For example, the destructuring pattern below would not work:
+When destructuring objects, we mentioned that we needed to use the same variable names we declared when creating our object. For example, the destructuring pattern below would not work:
 
 ##### **Code**
 ```JavaScript
@@ -370,7 +367,7 @@ Note that we still need to use the original variable names, but now, we simply r
 # Some practical examples
 
 ## 1. Deeply nested objects
-Let us imagine we just got a database entry containing the information of a potential client we would like to contact in order to offer some of our services. The problem is that we have limited resources and would like to only get the most relevant client fields.
+Let us imagine we just got a database entry containing the information of a potential client we would like to contact to offer some of our services. The problem is that we have limited resources and want only to get the most relevant client fields.
 
 The object has the following structure:
 
@@ -429,9 +426,9 @@ John Doe 30 johndoe@example.com 555-1234 NY New York English true
 ```
 
 ## 2. Extracting intermittently from an unknown array
-Let us imagine a scenario where we have an array with two levels of depth, and would like to extract the first, third and fifth elements from the first level, and all the elements except the first one, from the second level. However, the number of elements in the second level are unknown to us (*we only know that there's at least two elements*).
+Let us imagine a scenario where we have an array with two levels of depth and would like to extract the first, third, and fifth elements from the first level and all the elements except the first one from the second level. However, the number of elements in the second level is unknown to us (*we only know that there are at least two elements*).
 
-The structure is something as such:
+The structure is something such as:
 
 ##### **Code**
 ```JavaScript
@@ -440,9 +437,9 @@ const myArr = [[1, 2, 3], [4, 5, 6], [7, 8, 9], ['a', 'b', 'c'], ['d', 'e', 'f']
 
 So the strategy would consist of the following:
 - Get the required first-level elements using skipping.
-- Get the required second-level elements using skipping, followed by a spread operator to include the rest of the elements.
+- Get the required second-level elements using skipping, followed by a spread operator to include the remaining elements.
 
-We have not yet reviewed the rest operator. However, it's fairly simple; it includes all the elements of a given array, and is denoted by three dots `...`.
+We have not yet reviewed the rest operator. However, it's fairly simple; it includes all the elements of a given array and is denoted by three dots `...`.
 
 So, now that we have our strategy, we can define our destructuring pattern:
 
@@ -458,7 +455,7 @@ console.log(aa, bb, cc);
 ```
 
 ## 3. An object containing multiple argument groups
-Let us think of an example where we have a function that calculates a person's age by using their birth date, and then prints out a set of useful values about the person in question.
+Let us think of an example where we have a function that calculates a person's age by using their birth date and then prints out a set of useful values about the person in question.
 
 We can first abstract a person by using an object:
 
@@ -484,7 +481,7 @@ const person = {
 }
 ```
 
-We can then create a simple function for displaying basic data about this person, and returning a new object with only the fields we would like to preserve:
+We can then create a simple function for displaying basic data about this person and returning a new object with only the fields we would like to preserve:
 
 ##### **Code**
 ```JavaScript
@@ -539,9 +536,9 @@ Husband: Peter
 ---
 
 # Conclusions
-In this segment, we discussed what deconstruction is in the context of JavaScript, why is it useful, how can it be applied, to which structures can we apply it, its main syntax depending on the structure we're trying to deconstruct, some of the main features of this construct, and its main advantages. We also went over some simple practical examples in order to illustrate why this technique is so useful for some scenarios.
+In this segment, we discussed what deconstruction is in the context of JavaScript, why it is useful, how it can be applied, to which structures we can apply it, its main syntax depending on the structure we're trying to deconstruct, some of the main features of this construct, and its main advantages. We also reviewed some simple, practical examples to illustrate why this technique is so useful for some scenarios.
 
-Deconstruction is a powerful construct 
+Deconstruction is a powerful construct that effortlessly lets us extract values from arrays, objects, and other data structures. It greatly enhances code readability and reduces the need for repetitive access. Additionally, it can be used for multiple scenarios: from simplifying function parameters and iterating through arrays to enabling a more intuitive approach to data manipulation and dynamic assignment.
 
 ---
 

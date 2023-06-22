@@ -109,3 +109,30 @@ getExtData(exampleStructureOne)
 getExtData(exampleStructureTwo)
 getExtData(exampleStructureThree)
 getExtData(exampleStructureFour)
+
+// Example 2
+
+// Define classes
+case class Rational(numer: Int, denom: Int)
+case class Address(name: String, addr: String)
+
+// Create instances
+val myRationals = List(Rational(1,2), Rational(5,4), Rational(7,11))
+val myAddressBook = List(Address("John", "Vienna"), Address("Emma", "Stockholm"), Address("Paul", "Budapest"))
+
+trait Ordering[T]:
+    def order(x: List[T]): List[T]
+
+implicit object orderAddresses extends Ordering[Address]:
+    override def order(x: List[Address]): List[Address] = 
+        x.sortBy(y => y._2)
+
+implicit object orderRationals extends Ordering[Rational]:
+    override def order(x: List[Rational]): List[Rational] =
+        x.sortBy(y => y.numer/y.denom)
+
+def sortElements[T](element: List[T])(implicit orderingMethod: Ordering[T]): List[T] =
+    orderingMethod.order(element)
+
+sortElements(myAddressBook)
+sortElements(myRationals)

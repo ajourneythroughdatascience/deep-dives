@@ -8,13 +8,13 @@
 
 [![made-with badge](https://img.shields.io/static/v1?label=Made%20with&message=Obsidian&color=7d5bed&logo=obsidian&labelColor=1a1a1a&style=flat)](https://obsidian.md/)
 
-[![type](https://img.shields.io/static/v1?label=Type&message=deep-dive&color=e60048&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAi0lEQVRIS+2WMQ7AIAhF/UNXrtP7rz2OYxeqTWxMTBUSxQVXfnzyQQKC8YExL7zAGCNbgIkIsIKVhBw4vbR7unR6Gp0LvwxXd2v+EvkdDpxWXpWlRTyi9/pABRyBJHEHSlxSadxSlV0SsVsqcUml2W/pynWxnsXNisHMRxrCl8qvH3ECnQDuOmy+0zwB4WNxmUKgwwAAAABJRU5ErkJggg==&labelColor=1a1a1a&style=flat)](https://pabloagn.com/deep-dives/) [![category](https://img.shields.io/static/v1?label=Category&message=computer-science&color=e60048&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAB9UlEQVRIS6VWMU7DQBDkDAQEdrAoCISCAomCL1DxC95Azy9oeQS/oOIHVFAgREFoCHGCRSzZzEU+63LZ9W6CO/vudmZ2d9Zn1pTPaDSqut2usduHw+FpFEUv7t1fk8LNAkiPDWj3+ADuTPjNvXMxWwGzLCuqqtqwh5MkiY0xEwfOAfrEKFAWUBO4DZQDXgCEqjuouvbZUanUrocpngMMVUkKtKC+WhFQUudAUd8r1PkepJ/w7Tysn4uzkNJlascF9WOASAki6w0xrn19b3Gpps5y3kRfJADPZgr9gJSP0EgDHDiQ/Mp50PfxAmDtuQhsZmb/z0OVhwSkmGrSGp5bGRDp3EFaJ5JaiahdZ2vYNj/JkWVMgW7sgNw2yOW+99gacp7TeFE72OcUrgo4Ho93+/3+D5T9QmGHm0BNSnHgMI7jj9Ai2tElZGCK9S3S+GA4BcNNydBaIuEstu/iLJWCa+pLDm+Nz+xQAsBenucnRVG8asFq0s/Yf9YoVAI21wyn3N4I7M1A8ijWHwB42XrFqIO9YfMRlVqqyXC5ukED3nIEVJcoBXv1lmWa5gIpeeQioyTWVj1uXf0DpgKUZbmfpunXKnVnU9rWDKiTHRSDNkDu36iqIQK/Q+mxU8sBYniL/1EVoJ9Wqwo/5x6Cf9YKv6Em1XbNH5bGfSwvuRe1AAAAAElFTkSuQmCC&labelColor=1a1a1a&style=flat)](https://pabloagn.com/categories/computer-science/) [![technologies](https://img.shields.io/static/v1?label=Technologies&message=Scala&color=e60048&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA1klEQVR4nM2RMW7CUBBEnUikIQUIlBJxrrQgJG7ABRBnoUkaWhpoUgWJlgNYbvz/G1dUi1ayoy87rpOtVrszs6OdLPtXlef5UNJXjHHcCwohjMzsKZ3FGN+Bq/e+c0xHGfiWtEznkg6SNnW/dIxjs0YJ2AMnM3tJSFPgHkKY17gBcAQ+zOw5A3aSbsCkdW0NnNOZY2rstpcInJ3cS/SzwGdqtSzLmdusquqtIXWsehVF8QpcJK1qmxt/TMv6wjE/z0leP27i8Ag8inT/axxtAQ+9o/zn9QD3JOiyTjnQEQAAAABJRU5ErkJggg==&labelColor=1a1a1a&style=flat)](https://pabloagn.com/technologies/) [![website article](https://img.shields.io/static/v1?label=Website&message=Post%20Link&color=e60048&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB+ElEQVR4nO2VOYgUURCGR/BAI4MN1EwjI89EMDYQvNBNNNlcE0VBUdlUUSMjj2BF2UDRePDAwGzNF2GNPIYd8Hjv/6YnEHSf/FIDPTJiu4nJFBTd1Kv6/nrVBd1q/S8DJiU9AmaBm5LOSjoATPwDY0LSQUnnzDArmJOjkqclvQceSHohaR6oJC1JeiPprqT9pZSVg5pSyirH4sw5S1EzbwZwP5jTIwWBdj1meEppZ6/XOyXpCdCX9Am4Fv45Yo+Bk1VV7ag3FNz2kKC7yznvHiX4u3U6nXU55xPAW7vfHfvLmNtmW8NaFux67k0Ea03esTfJJQTj23bHgiNtPNK6jZem3Wpg46Wp23hp2q0GNl6axksjaRGYkXRF0mnHq6ra2HSk/X5/k6RDks6YEazFPwnuBS5KuirptqTnkj4CJZ4zwNFSytqBoP/2wDHgXi33A/BM0i2zzDR7SBC4LGlPr9fb5huVUlYMus45b5E0FYJfgQS8C8/Al7jJVEpp86DODLPMNDs0up7xXBQZVKLLb8CCpIfA+ZzzvpTS+lLKGuAI8DT8cClltc+c49yoWQjGL140ao25oW8QXW1IKe3KOR8Hbkh66ZtI+i7plaG+iR244JjP3HDkXnetGWbVp9XYopHtHgvwWtIPu9+BSx7bssBNDdhqX07xT/Jbz1SBBDGHAAAAAElFTkSuQmCC&labelColor=1a1a1a&style=flat)](https://pabloagn.com/deep-dives/type-classes-in-scala/)
+[![type](https://img.shields.io/static/v1?label=Type&message=deep-dive&color=e60048&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAi0lEQVRIS+2WMQ7AIAhF/UNXrtP7rz2OYxeqTWxMTBUSxQVXfnzyQQKC8YExL7zAGCNbgIkIsIKVhBw4vbR7unR6Gp0LvwxXd2v+EvkdDpxWXpWlRTyi9/pABRyBJHEHSlxSadxSlV0SsVsqcUml2W/pynWxnsXNisHMRxrCl8qvH3ECnQDuOmy+0zwB4WNxmUKgwwAAAABJRU5ErkJggg==&labelColor=1a1a1a&style=flat)](https://pabloagn.com/deep-dives/) [![category](https://img.shields.io/static/v1?label=Category&message=computer-science&color=e60048&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAB9UlEQVRIS6VWMU7DQBDkDAQEdrAoCISCAomCL1DxC95Azy9oeQS/oOIHVFAgREFoCHGCRSzZzEU+63LZ9W6CO/vudmZ2d9Zn1pTPaDSqut2usduHw+FpFEUv7t1fk8LNAkiPDWj3+ADuTPjNvXMxWwGzLCuqqtqwh5MkiY0xEwfOAfrEKFAWUBO4DZQDXgCEqjuouvbZUanUrocpngMMVUkKtKC+WhFQUudAUd8r1PkepJ/w7Tysn4uzkNJlascF9WOASAki6w0xrn19b3Gpps5y3kRfJADPZgr9gJSP0EgDHDiQ/Mp50PfxAmDtuQhsZmb/z0OVhwSkmGrSGp5bGRDp3EFaJ5JaiahdZ2vYNj/JkWVMgW7sgNw2yOW+99gacp7TeFE72OcUrgo4Ho93+/3+D5T9QmGHm0BNSnHgMI7jj9Ai2tElZGCK9S3S+GA4BcNNydBaIuEstu/iLJWCa+pLDm+Nz+xQAsBenucnRVG8asFq0s/Yf9YoVAI21wyn3N4I7M1A8ijWHwB42XrFqIO9YfMRlVqqyXC5ukED3nIEVJcoBXv1lmWa5gIpeeQioyTWVj1uXf0DpgKUZbmfpunXKnVnU9rWDKiTHRSDNkDu36iqIQK/Q+mxU8sBYniL/1EVoJ9Wqwo/5x6Cf9YKv6Em1XbNH5bGfSwvuRe1AAAAAElFTkSuQmCC&labelColor=1a1a1a&style=flat)](https://pabloagn.com/categories/computer-science/) [![technologies](https://img.shields.io/static/v1?label=Technologies&message=Scala,%20VS%20Code&color=e60048&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA1klEQVR4nM2RMW7CUBBEnUikIQUIlBJxrrQgJG7ABRBnoUkaWhpoUgWJlgNYbvz/G1dUi1ayoy87rpOtVrszs6OdLPtXlef5UNJXjHHcCwohjMzsKZ3FGN+Bq/e+c0xHGfiWtEznkg6SNnW/dIxjs0YJ2AMnM3tJSFPgHkKY17gBcAQ+zOw5A3aSbsCkdW0NnNOZY2rstpcInJ3cS/SzwGdqtSzLmdusquqtIXWsehVF8QpcJK1qmxt/TMv6wjE/z0leP27i8Ag8inT/axxtAQ+9o/zn9QD3JOiyTjnQEQAAAABJRU5ErkJggg==&labelColor=1a1a1a&style=flat)](https://pabloagn.com/technologies/) [![website article](https://img.shields.io/static/v1?label=Website&message=Post%20Link&color=e60048&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB+ElEQVR4nO2VOYgUURCGR/BAI4MN1EwjI89EMDYQvNBNNNlcE0VBUdlUUSMjj2BF2UDRePDAwGzNF2GNPIYd8Hjv/6YnEHSf/FIDPTJiu4nJFBTd1Kv6/nrVBd1q/S8DJiU9AmaBm5LOSjoATPwDY0LSQUnnzDArmJOjkqclvQceSHohaR6oJC1JeiPprqT9pZSVg5pSyirH4sw5S1EzbwZwP5jTIwWBdj1meEppZ6/XOyXpCdCX9Am4Fv45Yo+Bk1VV7ag3FNz2kKC7yznvHiX4u3U6nXU55xPAW7vfHfvLmNtmW8NaFux67k0Ea03esTfJJQTj23bHgiNtPNK6jZem3Wpg46Wp23hp2q0GNl6axksjaRGYkXRF0mnHq6ra2HSk/X5/k6RDks6YEazFPwnuBS5KuirptqTnkj4CJZ4zwNFSytqBoP/2wDHgXi33A/BM0i2zzDR7SBC4LGlPr9fb5huVUlYMus45b5E0FYJfgQS8C8/Al7jJVEpp86DODLPMNDs0up7xXBQZVKLLb8CCpIfA+ZzzvpTS+lLKGuAI8DT8cClltc+c49yoWQjGL140ao25oW8QXW1IKe3KOR8Hbkh66ZtI+i7plaG+iR244JjP3HDkXnetGWbVp9XYopHtHgvwWtIPu9+BSx7bssBNDdhqX07xT/Jbz1SBBDGHAAAAAElFTkSuQmCC&labelColor=1a1a1a&style=flat)](https://pabloagn.com/deep-dives/type-classes-in-scala/)
 
-Formally, a type class is a type system construct that supports ad hoc polymorphism. This is achieved by adding constraints to type variables in parametrically polymorphic types. In simpler terms, a type class is a construct that lets us add constraints to generic functions.
+Formally, a type class is a type-system construct that supports ad hoc polymorphism. This is achieved by adding constraints to type variables in parametrically polymorphic types. In simpler terms, a type class is a construct that lets us add constraints to generic functions.
 
-Type classes are useful when we have generic methods that may accept parameters of different types, and/or return results of different types, and would like to perform some kind of operation to our parameters without having to worry about explicitly defining the type-specific action ourselves. These constructs are widely used in type-drive programming, since they provide flexibility, while keeping our implementations safe.
+Type classes are useful when we have generic methods that may accept parameters of different types and/or return results of different types and would like to perform some kind of operation to our parameters without having to worry about explicitly defining the type-specific action ourselves. These constructs are widely used in type-drive programming since they provide flexibility while keeping our implementations safe.
 
-In this Deep Dive, we'll discuss what type classes are, why are they useful, how are they implemented, and finally, go over some practical examples in order to solidify the theory discussed.
+In this Deep Dive, we'll discuss what type classes are, why they are useful, how they are implemented, and finally, go over some practical examples in order to solidify the theory discussed.
 
 We'll be using Scala worksheets which can be found in the [Deep Dive Repo](https://github.com/pabloagn/blog/tree/master/computer-science/type-classes-in-scala).
 
@@ -28,7 +28,7 @@ We'll be using Scala worksheets which can be found in the [Deep Dive Repo](http
 	- Ad-hoc polymorphism]()
 - Some practical examples]()
 	- Requesting data from an external API]()
-	- Aaa]()
+	- Implementing an ordering function for two classes]()
 - [Conclusions](#conclusions)
 - [References](#references)
 - [Copyright](#copyright)
@@ -36,9 +36,9 @@ We'll be using Scala worksheets which can be found in the [Deep Dive Repo](http
 ---
 
 # What are type classes?
-It's easier to define type classes if we first define a problem we're trying to solve.
+In the context of Scala, a type class is a generic trait that comes with given instances for type instances of that trait. In a broader context, a type class is a construct that enables ad-hoc polymorphism, more commonly known as overloading. This is confusing, so let us first define a problem we're trying to solve and then provide a solution using type classes.
 
-Let us imagine we have multiple integer lists, and would like to define a method that adds all the elements inside the list, and returns the result as an integer value:
+Let us imagine we have multiple integer lists and would like to define a method that adds all the elements inside the list and returns the result as an integer value:
 
 ##### **Code**
 ```Scala
@@ -57,7 +57,7 @@ addIntegers(myListIntegers)
 res0: Int = 45
 ```
 
-This is a very straight-forward method, where, in one line, we define an operation that will add all the elements of our list, and return the required value.
+This is a very straightforward method, where, in one line, we define an operation that will add all the elements of our list and return the required value.
 
 The problem is that this is not a generic function, meaning this will only work with lists of integer values. We can confirm this by trying to perform the same operation with a list of strings:
 
@@ -84,16 +84,16 @@ addGeneric[T](xs: List[T]): T
 ```
 
 Where:
-- The type `T` signifies any possible type under our "*definition*" of what can eb computed as a sum of elements.
+- The type `T` signifies any possible type under our "*definition*" of what can be computed as a sum of elements.
 
-But, wait a minute, how are we to implement this function? How can we tell the Scala compiler that, whenever we send a list of integers, it should compute the addition, but whenever we send a list of strings, it should concatenate the elements instead?
+But wait a minute, how are we to implement this function? How can we tell the Scala compiler that whenever we send a list of integers, it should compute the addition, but whenever we send a list of strings, it should concatenate the elements instead?
 
 Well, here's where type classes come in handy, but first, we have to take a look at implicits.
 
 ---
 
 # What are implicits?
-Implicits are a very powerful concept in Scala; they let the compiler **infer** about certain value, based on its type. This concept is a little confusing, so let us explain it with yet another example.
+Implicits are a very powerful concept in Scala; they let the compiler **infer** certain values based on their type. This concept is confusing, so let us explain it with yet another example.
 
 Let us imagine we have a very powerful function that computes the square of a given number:
 
@@ -121,7 +121,7 @@ def myInferringMethod(implicit x: Int): Int =
     x * x
 ```
 
-Now, when we call our function, Scala will try to find a parameter that matches the type of the input argument in our `myInferringMethod` function, given that we also define an `implicit` variable alongside.
+Now, when we call our function, Scala will try to find a parameter that matches the input argument type in our `myInferringMethod` function, given that we also define an `implicit` variable alongside.
 
 ##### **Code**
 ```Scala
@@ -138,24 +138,24 @@ myInferringMethod
 res1: Int = 49
 ```
 
-So, we did not need to call our function with an argument explicitly; the compiler noticed that we declared an implicit variable matching the type of our argument's signature, and used that as input.
+So, we did not need to explicitly call our function with an argument; the compiler noticed that we declared an implicit variable matching the type of our argument's signature and used that as input.
 
-Of course, if we declare multiple implicit variables with the same type, Scala's compiler will complain, telling us that what we're doing is resulting in an ambiguous evaluation; the compiler doesn't know which value to use for the implicit call.
+Of course, if we declare multiple implicit variables with the same type, Scala's compiler will complain, telling us that what we're doing results in an ambiguous evaluation; the compiler doesn't know which value to use for the implicit call.
 
-This is not super useful when dealing with simple functions and variables. However, we can hopefully start to see the confection between using type classes and implicits together.
+This is not super useful when dealing with simple functions and variables. However, we can hopefully start seeing the connection between using type classes and implicits.
 
 ---
 
 # Type classes & implicits together
 If we recall from our last examples, we have the following:
-- A generic function that accepts a list of elements of type `T` as argument.
+- A generic function that accepts a list of elements of type `T` as an argument.
 - The need to add those elements, depending on their type.
-- The possibility to use the `implicit` keyword to let the compiler infer which value to use.
+- The possibility of using the `implicit` keyword lets the compiler infer which value to use.
 
-Let us start by defining a `trait` that includes all the possible operations that can be done with the types that we're looking to implement.
+Let us start by defining a `trait` that includes all the possible operations that can be done with the types we want to implement.
 
 ## 1. Defining a type class
-Type classes are nothing more than traits that have one or more implicit method definitions inside. We want to define a `trait` that extends the functionality of our original sum function in a safe way, meaning we want to delimit the element types we can accept, and have ready a well-defined method for each case:
+Type classes are nothing more than traits with one or more implicit method definitions. We want to define a `trait` that extends the functionality of our original sum function safely, meaning we want to delimit the element types we can accept and have ready a well-defined method for each case:
 
 ##### **Code**
 ```Scala
@@ -172,7 +172,7 @@ implicit object SumOfStrings extends SumOfLists[String]:
 ```
 
 ## 2. Ad-hoc polymorphism
-Ad-hoc polymorphism is the fruit of type classes used in functions where we have implicit arguments. This might sound unintelligible, but it's actually not that hard once we include an example. Continuing from our sum function, we would now want to redesign it to accept the traits we just declared; this will finally create a truly generic function, but with proper defined methods for each type case. And the best of all, is that it will be dynamic, meaning the compiler will decide which method to use, depending on the type we throw as argument.
+Ad-hoc polymorphism is the fruit of type classes used in functions with implicit arguments. This might sound unintelligible, but it's not that hard once we include an example. Continuing from our sum function, we would now want to redesign it to accept the traits we just declared; this will finally create a truly generic function but with properly defined methods for each type case. And the best of all is that it will be dynamic, meaning the compiler will decide which method to use depending on the type we throw as an argument.
 
 This is known as [ad-hoc polymorphism](https://en.wikipedia.org/wiki/Ad_hoc_polymorphism). Formally, we can define it as a programming concept used to describe functions with the same name that are executed differently, depending on the variable or argument type. It is also referred to as “*function overloading*” or “*method overloading*".
 
@@ -204,7 +204,7 @@ res4: Double = 23.1
 res5: String = 123456789
 ```
 
-Also, note that this implementation is safe, since, if the compiler is not able to find an implicit matching the types of the elements inside the list, it will throw an error at compile time. In short, we have full control of what can and cannot be done inside our defined method:
+Also, note that this implementation is safe since if the compiler cannot find an implicit matching of the types of the elements inside the list, it will throw an error at compile time. In short, we have full control of what can and cannot be done inside our defined method:
 
 ##### **Code**
 ```Scala
@@ -216,7 +216,7 @@ addGeneric(List(true, true, false))
 No given instance of type MdocApp.this.SumOfLists[Boolean] was found for parameter addElements of method addGeneric in class MdocApp
 ```
 
-This is horrible, right? So much work for a simple flexible function. Well, this is the price we have to pay when using strongly typed languages. The rules are rigorous, and make our code much more efficient in terms of execution and type safety, but we need to declare things in a different way that we would in other languages such as Python, JavaScript, etc.
+This is horrible, right? So much work for a simple, flexible function. This is the price we must pay when using strongly statically typed languages. The rules are rigorous and make our code much more efficient in terms of execution and type safety. Still, we need to declare things differently than in more flexible languages such as Python, JavaScript, etc.
 
 ---
 
@@ -224,24 +224,24 @@ This is horrible, right? So much work for a simple flexible function. Well, this
 Now that we have understood the very basics of type classes, we can proceed with some simple examples that will hopefully transmit why these constructs are extremely valuable when working with a strong statically-typed language like Scala.
 
 ## 1. Requesting data from an external API
-Sometimes we're working with external APIs, and stumble upon poorly-documented ones, where we don't fully know the return type of the object requested. If we're working with strong statically-typed languages such as Scala, this is our worst nightmare, since one simple misalignment can complete break our program.
+Sometimes we work with external APIs and stumble upon poorly-documented ones where we don't fully know the return type of the object requested. If we're working with strong statically-typed languages such as Scala, this is our worst nightmare since one simple misalignment can completely break our program.
 
-We can solve this by using a type class that acts according to the object type that we're getting. But first, we have to ask ourselves, how can our external data be structured? What data structures could be used to transfer the data through this mysterious API?
+We can solve this by using a type class that acts according to the object type we're getting. But first, we must ask ourselves how our external data can be structured. What data structures could be used to transfer the data through this mysterious API?
 
 Well, below are some ideas:
-- List
+- `List`
 	- A list of values of the same type, but we can have multiple lists of multiple types.
-- Array
+- `Array`
 	- Same as with lists
-- Enum
+- `Enum`
 	- Can have multiple different types. 
-- Map
+- `Map`
 	- Can have keys associated with the values.
 
-Great. So now we have an infinite amount of options to choose from, and this will take forever to write. The best approach here is to get at least some information of our object, and try to build from there.
+Great. So now we have infinite options to choose from, and this will take forever to write. The best approach here is to get at least some information about our object and try to build from there.
 
 For the sake of this example, let us imagine that the developers of this external API actually provided some hints of the output structure. They said it might be one of the following:
-- A `Map` of key value pairs, where each key is of type `String`, and each value is an object of type `Array` with the following possible element types:
+- A `Map` of key-value pairs, where each key is of type `String`, and each value is an object of type `Array` with the following possible element types:
 	- `Int`
 	- `String`
 	- `Double`
@@ -249,7 +249,7 @@ For the sake of this example, let us imagine that the developers of this externa
 	- `Int`
 	- `String`
 
-So now our options are narrowed down; we know that we are expecting structures as such: 
+So now our options are narrowed down; we know that we are expecting structures as such:
 
 ##### **Code**
 ```Scala
@@ -281,9 +281,9 @@ val exampleStructureFour = Map(
 )
 ```
 
-This sounds fairly reasonable. So, what we need to worry about is how are we destructuring these possibilities, and how are we letting the compiler know which possibility to expect?
+This sounds fairly reasonable. So, we need to worry about how we are destructuring these possibilities, and how are we letting the compiler know which possibility to expect.
 
-Well, we can start with a type class for starters:
+Well, we can start with a type class as a first step:
 
 ##### **Code**
 ```Scala
@@ -336,20 +336,90 @@ res8: List[Int] = List(1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 
 res9: List[String] = List(Edward, Gibbon, Virginia, Woolf, Clarice, Lispector, Thomas, Hardy, James, Baldwin)
 ```
 
-We can imagine that this precise signature (*that of the trait*) would probably not be the best approach if we're trying to extract data from an API return object, since we're effectively loosing any dimensionality or structuring that the API provider organized for us.
+We can imagine that this precise signature (*that of the trait*) would probably not be the best approach if we're trying to extract data from an API return object since we're effectively losing any dimensionality or structuring the API provider organized for us.
 
-The ideal approach here, would be to build another Map, for example, containing all homogenized structures (*instead of a list of values*), but the point is made; this construct is extremely versatile and powerful, and most importantly, it's safe.
+The ideal approach here would be to build another Map, for example, containing all homogenized structures (*instead of a list of values*), but the point is made; this construct is extremely versatile and powerful, and most importantly, it's safe.
 
-## 2. Aaa
-Aaa
+## 2. Implementing an ordering function for two classes
+Sometimes we must abstract certain types that the language does not provide by default. For example, we can divide integer numbers by performing a division operation, but we cannot directly express its rational form (*i.e., its fraction form*). To do this, we can create a new class and assign specific operations typically associated with a rational number.
+
+The problem is that when we define a specific method for that class, we might also want to use it in other classes.
+
+For example, we can define an ordering operation that orders rational numbers in ascending or descending order. We might also want to order some other custom type, for example, a list of addresses; these are two totally unrelated objects. However, in real life, we sometimes encounter this scenario where we would like to use one method for many objects and would like to delegate the decision of how to apply each method to the compiler.
+
+Let us start by defining our classes:
+
+##### **Code**
+```Scala
+// Define classes
+case class Rational(numer: Int, denom: Int)
+case class Address(name: String, addr: String)
+```
+
+Great. Now, we need to define our type class (*trait*):
+
+##### **Code**
+```Scala
+trait Ordering[T]:
+    def order(x: List[T]): List[T]
+```
+
+Very nice. Now, let us start defining variations of our `compare` method for each of the two options:
+- Rational numbers
+- Address books
+
+##### **Code**
+```Scala
+implicit object orderAddresses extends Ordering[Address]:
+    override def order(x: List[Address]): List[Address] = 
+        x.sortBy(y => y._2)
+
+implicit object orderRationals extends Ordering[Rational]:
+    override def order(x: List[Rational]): List[Rational] =
+        x.sortBy(y => y.numer/y.denom)
+```
+
+Lastly, let us define a function for doing the comparison, as well as some class instances:
+
+##### **Code**
+```Scala
+def sortElements[T](element: List[T])(implicit orderingMethod: Ordering[T]): List[T] =
+    orderingMethod.order(element)
+
+sortElements(myAddressBook)
+sortElements(myRationals)
+```
+
+##### **Output**
+```
+res10: List[Address] = List(Address(Paul,Budapest), Address(Emma,Stockholm), Address(John,Vienna))
+res11: List[Rational] = List(Rational(1,2), Rational(7,11), Rational(5,4))
+```
+
+So, in the first case, we're sorting ascendingly by the person's location, starting from Budapest and ending in Vienna. However, in the second case, we're actually performing a division operation, comparing the resulting floats, and then using that as a sorting parameter.
+
+This is not the most elegant way of sorting rational numbers; we can play a little bit with numerators and denominators, specifically denoting something as such:
+
+```
+val xn = x.numer * y.denom
+val yn = y.numer * x.denom
+```
+
+Where `x` & `y` are two rational numbers, and if `xn` > `yn`, then `x` is larger than `y`. However, that's not the point here. The main takeaway is that type classes are extremely flexible, even for two totally unrelated objects; the trick is knowing how to represent each operation as a separate method, and the rest is history.
+
+---
+
+# Conclusions
+In this segment, we discussed what type classes are, what problems they solve when talking about statically typed languages, and why they are useful. We then discussed how type classes can be used in conjunction with implicits and what role type classes play in ad-hoc polymorphism. We closed this segment by introducing a couple of examples that could be extrapolated to real-life situations.
+
+Type classes are an elegant construct present in various languages such as C++, Haskell, [Rust](https://pabloagn.com/blog/rust-for-beginners/), and other more esoteric languages such as Idris & Agda. Type classes let us write code in a flexible way that is still safe.
 
 ---
 
 # References
-- A
-- A
-- A
-- A
+- [Type Classes in Scala, Baeldung](https://www.baeldung.com/scala/type-classes)
+- [Type Classes, Scala Documentation](https://docs.scala-lang.org/scala3/book/ca-type-classes.html)
+- [Haskell Wiki, OOP vs Type Classes](https://wiki.haskell.org/OOP_vs_type_classes)
 
 ---
 

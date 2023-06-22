@@ -21,14 +21,14 @@ We'll be using Scala worksheets which can be found in the [Deep Dive Repo](http
 ---
 
 # Table of Contents
-- What are type classes?]()
-- What are implicits?]()
-- Type classes & implicits together]()
-	- Defining a type class]()
-	- Ad-hoc polymorphism]()
-- Some practical examples]()
-	- Requesting data from an external API]()
-	- Implementing an ordering function for two classes]()
+- [What are type classes?](#what-are-type-classes)
+- [What are implicits?](#what-are-implicits)
+- [Type classes & implicits together](#type-classes--implicits-together)
+	- [Defining a type class](#1-defining-a-type-class)
+	- [Ad-hoc polymorphism](#2-ad-hoc-polymorphism)
+- [Some practical examples](#some-practical-examples)
+	- [Requesting data from an external API](#1-requesting-data-from-an-external-api)
+	- [Implementing an ordering function for two classes](#2-implementing-an-ordering-function-for-two-classes)
 - [Conclusions](#conclusions)
 - [References](#references)
 - [Copyright](#copyright)
